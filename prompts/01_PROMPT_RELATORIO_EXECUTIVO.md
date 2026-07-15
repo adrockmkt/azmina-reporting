@@ -95,17 +95,11 @@ Carregar exatamente nesta ordem:
 2. START_HERE.md
 3. COMANDO.md
 4. prompts/00_MASTER_SPECIFICATION.md
-5. prompts/02_ESTILO_DE_ESCRITA.md
-6. prompts/03_REGRAS_DE_ANALISE.md
-7. prompts/04_GLOSSARIO.md
-8. prompts/05_HISTORICO_DO_PROJETO.md
-9. prompts/06_HIPOTESES_E_CONFIANCA.md
-10. prompts/07_ESTILO_CONSULTIVO.md
-11. prompts/08_RELATORIO_EXECUTIVO.md
-12. todos os arquivos de knowledge/, em ordem numérica
-13. todos os arquivos de history/
-14. manifest.json da competência
-15. exclusivamente os PDFs da competência ativa
+5. prompts/01_PROMPT_RELATORIO_EXECUTIVO.md até prompts/08_RELATORIO_EXECUTIVO.md, em ordem numérica
+6. todos os arquivos de knowledge/, em ordem numérica
+7. todos os arquivos de history/
+8. manifest.json da competência
+9. reports/${COMPETENCIA}/source/
 Todos devem permanecer ativos simultaneamente durante a geração.
 A ordem de carregamento não muda a hierarquia de responsabilidade dos documentos.
 README.md, START_HERE.md e COMANDO.md orientam a operação.

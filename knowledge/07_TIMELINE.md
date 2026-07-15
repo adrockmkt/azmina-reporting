@@ -50,46 +50,22 @@ Não registrar fatos que só fazem sentido dentro de uma competência.
 Resultado mensal pertence a history/.
 Indicador comparável pertence a history/indicadores_historicos.csv.
 Aprendizado candidato pertence a history/ até promoção.
-## Marco Inicial do Framework
-Julho de 2026 marca o período de estruturação do projeto AzMina Reporting.
-Esse marco é registrado como fato estrutural, não como desempenho.
-Nesse período, o projeto passou a ter linguagem permanente e objetiva.
-O repositório foi estruturado como base operacional do framework.
-A arquitetura geral foi definida.
-Os prompts principais foram criados.
-A política de versionamento foi formalizada.
-As quatro fontes obrigatórias foram definidas.
-O template oficial de manifest foi criado.
-A base knowledge foi iniciada.
-A separação entre Codex e ChatGPT foi registrada.
-A distinção entre history e knowledge foi formalizada.
-A proteção de PDFs e arquivos finais locais foi incorporada.
-Nenhuma métrica de desempenho deve ser anexada a esse marco.
-O marco inicial explica a origem operacional do framework.
 ## Linha do Tempo Estrutural
-### Julho de 2026
-- criação do repositório AzMina Reporting;
-- definição da arquitetura de competências mensais;
-- definição de `reports/AAAA-MM/` como unidade operacional;
-- separação entre `source/`, `analysis/`, `output/` e `manifest.json`;
-- definição das quatro fontes obrigatórias;
-- criação dos prompts estruturais do framework;
-- definição do Prompt 01 como controlador de execução;
-- separação entre Codex e ChatGPT;
-- definição de revisão humana antes do encerramento;
-- definição de que DOCX e PDF finais são gerados fora do pipeline operacional do Codex;
-- criação da política local para PDFs;
-- definição de que PDFs não são versionados;
-- criação do manifest template;
-- início da base permanente em knowledge/;
-- formalização de history/ como camada de resultados aprovados;
-- recomendação arquitetural para history/monthly/;
-- definição de que knowledge guarda memória permanente;
-- definição de que resultados mensais não entram em knowledge;
-- consolidação das regras de estilo, análise, glossário, histórico, hipóteses, consultoria e relatório executivo.
-Registrar apenas fatos já confirmados pela arquitetura atual.
-Não adicionar métricas a esta entrada.
-Não transformar este marco em retrospectiva de performance.
+### Estruturação inicial
+- definicao do AzMina Reporting como framework mensal de analise;
+- definicao de `reports/AAAA-MM/` como unidade operacional;
+- separacao entre `source/`, `analysis/`, `output/` e `manifest.json`;
+- definicao das quatro fontes obrigatorias;
+- separacao entre prompts, knowledge, history e reports;
+- definicao do Prompt 01 como controlador de execucao;
+- formalizacao da revisao humana antes do encerramento;
+- definicao de que PDFs de entrada, DOCX finais e PDFs finais permanecem locais;
+- definicao de history como memoria operacional aprovada;
+- definicao de knowledge como memoria permanente.
+Este marco explica a arquitetura vigente.
+Detalhes de construcao do framework pertencem a `knowledge/11_CHANGELOG.md`.
+Nao adicionar metricas a esta entrada.
+Nao transformar este marco em historico de desenvolvimento.
 ## Eventos Futuros que Devem Ser Registrados
 Primeiro teste real do pipeline.
 Primeira competência concluída.
@@ -231,5 +207,5 @@ Revisar este arquivo quando houver mudança no fluxo do pipeline.
 - não registrar métricas de competência;
 - não duplicar changelog;
 - não substituir decisões arquiteturais detalhadas;
-- manter julho de 2026 como marco inicial de estruturação;
+- manter apenas marcos estruturais permanentes;
 - preservar linguagem objetiva e permanente.

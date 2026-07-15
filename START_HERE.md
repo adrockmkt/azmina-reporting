@@ -5,9 +5,9 @@
 Este arquivo é o orquestrador oficial do pipeline mensal do AzMina Reporting. Toda nova competência deve iniciar obrigatoriamente por este arquivo.
 
 - README.md descreve a arquitetura geral.
-- prompts/00_MASTER_SPECIFICATION.md define a especificação estrutural.
 - START_HERE.md define a ordem operacional.
 - COMANDO.md será a entrada curta reutilizável.
+- prompts/00_MASTER_SPECIFICATION.md define a especificação estrutural.
 
 ## Princípio Central
 
@@ -44,14 +44,16 @@ Jamais enviar PDFs para o repositório.
 O Codex deve:
 
 1. Ler README.md.
-2. Ler prompts/00_MASTER_SPECIFICATION.md.
-3. Validar a arquitetura do repositório.
-4. Confirmar que a branch ativa está correta.
-5. Verificar o status do Git.
-6. Localizar ou criar `reports/${COMPETENCIA}/`, `reports/${COMPETENCIA}/source/`, `reports/${COMPETENCIA}/analysis/` e `reports/${COMPETENCIA}/output/`.
-7. Criar ou validar `reports/${COMPETENCIA}/manifest.json`.
-8. Não gerar análises nesta fase.
-9. Não alterar history/ ou knowledge/.
+2. Ler START_HERE.md.
+3. Ler COMANDO.md.
+4. Ler prompts/00_MASTER_SPECIFICATION.md.
+5. Validar a arquitetura do repositório.
+6. Confirmar que a branch ativa está correta.
+7. Verificar o status do Git.
+8. Localizar ou criar `reports/${COMPETENCIA}/`, `reports/${COMPETENCIA}/source/`, `reports/${COMPETENCIA}/analysis/` e `reports/${COMPETENCIA}/output/`.
+9. Criar ou validar `reports/${COMPETENCIA}/manifest.json`.
+10. Não gerar análises nesta fase.
+11. Não alterar history/ ou knowledge/.
 
 Ao concluir, interromper e solicitar exatamente:
 
@@ -96,12 +98,14 @@ Interromper se uma fonte obrigatória estiver ausente, a competência estiver in
 Após validar a competência, ler nesta ordem:
 
 1. README.md.
-2. prompts/00_MASTER_SPECIFICATION.md.
-3. Todos os demais arquivos de prompts/, em ordem numérica.
-4. Todos os arquivos de knowledge/, em ordem numérica.
-5. Todos os arquivos disponíveis em history/.
-6. manifest.json da competência.
-7. Exclusivamente os PDFs presentes em `reports/${COMPETENCIA}/source/`.
+2. START_HERE.md.
+3. COMANDO.md.
+4. prompts/00_MASTER_SPECIFICATION.md.
+5. prompts/01_PROMPT_RELATORIO_EXECUTIVO.md até prompts/08_RELATORIO_EXECUTIVO.md, em ordem numérica.
+6. Todos os arquivos de knowledge/, em ordem numérica.
+7. Todos os arquivos disponíveis em history/.
+8. manifest.json da competência.
+9. Exclusivamente os PDFs presentes em `reports/${COMPETENCIA}/source/`.
 
 Todos os documentos devem permanecer ativos simultaneamente durante a análise. Nunca ler PDFs de outras competências ou usar dados mensais de outra competência como dados atuais. O histórico serve apenas para comparação e contexto.
 

@@ -7,7 +7,16 @@
     "gsc": false,
     "semrush": false
   },
-  "arquivos": [],
+  "arquivos": [
+    {
+      "nome": "",
+      "fonte": "",
+      "tipo": "",
+      "periodo": "",
+      "status": "pendente",
+      "observacoes": ""
+    }
+  ],
   "analysis": {
     "ga4": false,
     "google_ads": false,

@@ -103,6 +103,20 @@ Exemplo: `reports/2026-06/`.
 
 Cada competência é autocontida. Não misturar arquivos de meses diferentes nem criar análises fora da competência ativa.
 
+## Ordem de Carregamento
+
+Toda competência deve carregar o contexto exatamente nesta ordem:
+
+1. README.md
+2. START_HERE.md
+3. COMANDO.md
+4. prompts/00_MASTER_SPECIFICATION.md
+5. prompts/01_PROMPT_RELATORIO_EXECUTIVO.md até prompts/08_RELATORIO_EXECUTIVO.md, em ordem numérica
+6. Todos os arquivos de knowledge/, em ordem numérica
+7. Todos os arquivos disponíveis em history/
+8. manifest.json da competência
+9. reports/AAAA-MM/source/
+
 ## Estrutura Interna da Competência
 
 ### source/

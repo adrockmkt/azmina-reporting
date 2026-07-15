@@ -28,8 +28,9 @@ Toda execução deve seguir obrigatoriamente `START_HERE.md`.
 Antes de qualquer análise, o Codex deve ler:
 
 1. README.md
-2. prompts/00_MASTER_SPECIFICATION.md
-3. START_HERE.md
+2. START_HERE.md
+3. COMANDO.md
+4. prompts/00_MASTER_SPECIFICATION.md
 
 Depois deve seguir integralmente as fases, validações, interrupções e regras descritas nesses arquivos.
 
@@ -92,13 +93,14 @@ Interromper se houver ausência de fonte obrigatória, competência inconsistent
 Se a competência estiver válida, ler nesta ordem:
 
 1. README.md
-2. prompts/00_MASTER_SPECIFICATION.md
-3. START_HERE.md
-4. Todos os demais arquivos de prompts/, em ordem numérica
-5. Todos os arquivos de knowledge/, em ordem numérica
-6. Todos os arquivos disponíveis em history/
-7. manifest.json da competência
-8. Exclusivamente os PDFs presentes em `reports/${COMPETENCIA}/source/`
+2. START_HERE.md
+3. COMANDO.md
+4. prompts/00_MASTER_SPECIFICATION.md
+5. prompts/01_PROMPT_RELATORIO_EXECUTIVO.md até prompts/08_RELATORIO_EXECUTIVO.md, em ordem numérica
+6. Todos os arquivos de knowledge/, em ordem numérica
+7. Todos os arquivos disponíveis em history/
+8. manifest.json da competência
+9. Exclusivamente os PDFs presentes em `reports/${COMPETENCIA}/source/`
 
 Todos os documentos devem permanecer ativos simultaneamente durante a análise.
 
