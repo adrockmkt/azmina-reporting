@@ -148,6 +148,33 @@ knowledge/ guarda memória permanente. history/ guarda resultados mensais aprova
 - 07_ESTILO_CONSULTIVO.md define o tom consultivo e a orientação para decisão.
 - 08_RELATORIO_EXECUTIVO.md organiza a estrutura final do relatório executivo.
 
+## Política de Versionamento
+
+Devem ser versionados:
+
+- prompts;
+- knowledge;
+- history;
+- markdown;
+- json;
+- csv;
+- scripts;
+- templates.
+
+Não devem ser versionados:
+
+- PDFs;
+- DOCX;
+- PDF final;
+- arquivos temporários;
+- arquivos locais.
+
+Os PDFs são apenas fontes de entrada para análise.
+
+Eles nunca são patrimônio do repositório.
+
+Os arquivos finais em DOCX e PDF permanecem locais após a finalização editorial.
+
 ## Fontes obrigatórias
 
 ### Google Analytics 4

@@ -33,6 +33,14 @@ Antes de qualquer análise, o Codex deve ler:
 
 Depois deve seguir integralmente as fases, validações, interrupções e regras descritas nesses arquivos.
 
+## Validação de Versionamento
+
+Antes da execução, confirmar que:
+
+- .gitignore existe;
+- source/ está protegida;
+- PDFs não serão versionados.
+
 ## Etapa 1. Preparação
 
 Após validar COMPETENCIA, o Codex deve:

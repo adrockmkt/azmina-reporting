@@ -154,6 +154,16 @@ Nenhuma análise começa antes da validação do manifest.
 - registrar todos os arquivos no manifest;
 - identificar relatórios por nome e conteúdo.
 
+## Arquivos Não Versionados
+
+`reports/${COMPETENCIA}/source/` é uma área exclusivamente local.
+
+Os PDFs usados como fonte de análise não devem ser enviados ao GitHub.
+
+DOCX e PDF finais gerados em `reports/${COMPETENCIA}/output/` também permanecem locais.
+
+Markdown, JSON, CSV, prompts, knowledge, history, scripts e templates continuam versionados normalmente.
+
 ## Fluxo Operacional Mensal
 
 ### 1. Início da competência

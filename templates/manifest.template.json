@@ -1,0 +1,22 @@
+{
+  "competencia": "",
+  "status": "preparacao",
+  "fontes": {
+    "ga4": false,
+    "google_ads": false,
+    "gsc": false,
+    "semrush": false
+  },
+  "arquivos": [],
+  "analysis": {
+    "ga4": false,
+    "google_ads": false,
+    "gsc": false,
+    "semrush": false
+  },
+  "output": {
+    "resumo_executivo": false
+  },
+  "revisao_humana": false,
+  "encerrado": false
+}

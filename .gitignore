@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Temporários
+*.tmp
+*.bak
+*.swp
+*~
+
+# Python
+**pycache**/
+*.pyc
+
+# Arquivos enviados para análise
+reports/*/source/*
+!reports/*/source/.gitkeep
+
+# Arquivos DOCX finais
+reports/*/output/*.docx
+
+# PDFs finais
+reports/*/output/*.pdf
+
+# Arquivos temporários de Office
+~$*

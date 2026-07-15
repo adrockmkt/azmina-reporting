@@ -35,6 +35,10 @@ Qual competência mensal devo processar? Responda no formato AAAA-MM, por exempl
 
 Definir internamente `COMPETENCIA=<valor informado>` e usar esse valor em todos os caminhos da execução. Nunca usar mês fixo, nunca reutilizar competência de exemplo e nunca criar arquivos fora de `reports/${COMPETENCIA}/`.
 
+Antes de iniciar qualquer competência, confirmar que os PDFs permanecem apenas na pasta local `reports/${COMPETENCIA}/source/`.
+
+Jamais enviar PDFs para o repositório.
+
 ## Fase 1. Preparação da Competência
 
 O Codex deve:
