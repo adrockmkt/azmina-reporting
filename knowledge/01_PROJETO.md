@@ -7,7 +7,7 @@ https://azmina.com.br/
 Cliente:
 AzMina
 Consultoria responsável:
-Ad Rock Digital Marketing
+Ad Rock Digital Mkt
 Responsável pela consultoria:
 Rafael Marques Lins
 O AzMina Reporting é um sistema mensal de análise, documentação e consolidação de dados digitais.
