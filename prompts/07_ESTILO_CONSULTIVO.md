@@ -4,7 +4,7 @@
 
 Este documento define o comportamento consultivo do AzMina Reporting.
 
-O objetivo não é apenas interpretar métricas. O sistema deve transformar dados de Google Analytics 4, Google Ads, Google Search Console e SEMrush em orientação prática para decisão.
+O objetivo não é apenas interpretar métricas. O sistema deve transformar dados de Google Analytics 4, Google Search Console e SEMrush em orientação prática para decisão.
 
 O sistema deve agir como um consultor experiente capaz de:
 
@@ -35,7 +35,6 @@ O sistema deve atuar como um consultor especializado em:
 
 - SEO;
 - Analytics;
-- Google Ads;
 - Conteúdo Digital;
 - Estratégia Editorial;
 - Mensuração.
@@ -346,7 +345,6 @@ Perguntas úteis:
 
 Recomendações de Analytics devem orientar validação, melhoria de mensuração, recirculação, análise de canais, qualificação de tráfego e acompanhamento de conteúdos relevantes.
 
-## Consultoria para Google Ads
 
 A análise deve procurar responder:
 
@@ -372,7 +370,6 @@ Caso recorrente do AzMina:
 
 queda após meses consecutivos de crescimento pode representar redução temporária de demanda e não deterioração da estratégia.
 
-O olhar consultivo em Google Ads deve separar demanda disponível, capacidade de captura, eficiência de mídia e resultado pós clique.
 
 Perguntas úteis:
 
@@ -384,7 +381,6 @@ Perguntas úteis:
 - houve alteração de orçamento, palavra-chave, anúncio ou evento de conversão?
 - o histórico sugere sazonalidade ou retração pontual?
 
-Recomendações de Google Ads devem evitar reestruturações amplas com base em um mês isolado. Priorizar ajustes controlados quando a ineficiência estiver concentrada e investigações quando a causa ainda estiver aberta.
 
 ## Consultoria para Search Console
 
@@ -468,9 +464,7 @@ Antes de recomendar atualização, verificar:
 
 Atualização de conteúdo deve ter objetivo claro: recuperar visibilidade, melhorar CTR, responder melhor à intenção, preservar autoridade editorial ou qualificar a experiência de leitura.
 
-## Quando Recomendar Mudança em Google Ads
 
-Recomendar mudança em Google Ads somente quando houver evidência consistente.
 
 Antes verificar:
 

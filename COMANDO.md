@@ -25,6 +25,28 @@ Depois que o usuário informar uma competência válida, definir internamente `C
 
 Toda execução deve seguir obrigatoriamente `START_HERE.md`.
 
+Para preparar a estrutura da competência pelo terminal, pode ser usado:
+
+```bash
+./start.command
+```
+
+O comando pergunta a competência, detecta pastas já criadas e confirma se existem arquivos em `reports/AAAA-MM/source/`.
+
+Também é possível informar a competência diretamente:
+
+```bash
+./start.command 2026-07
+```
+
+Esse atalho prepara pastas, valida proteção local de source/, cria manifest.json quando necessário e, se source/ já tiver arquivos, inicia o Codex automaticamente para validação e análise.
+
+Para apenas preparar a estrutura sem iniciar o Codex, usar:
+
+```bash
+./start.command --prepare
+```
+
 Antes de qualquer análise, o Codex deve ler:
 
 1. README.md
@@ -53,9 +75,10 @@ Após validar COMPETENCIA, o Codex deve:
 5. Não gerar análises.
 6. Não alterar history/.
 7. Não alterar knowledge/.
-8. Não gerar DOCX ou PDF.
+8. Verificar se `reports/${COMPETENCIA}/source/` já contém arquivos.
+9. Não gerar DOCX ou PDF.
 
-Ao concluir, interromper e solicitar exatamente:
+Se source/ estiver vazio, interromper e solicitar exatamente:
 
 ```text
 Copie todos os PDFs para:
@@ -69,9 +92,11 @@ Quando terminar, responda apenas:
 CONTINUAR
 ```
 
-## Etapa 2. Validação e Análise após CONTINUAR
+Se source/ já contiver arquivos da competência, não solicitar `CONTINUAR`. Seguir diretamente para a Etapa 2.
 
-Executar somente quando o usuário responder exatamente `CONTINUAR`. Usar a mesma competência definida na Etapa 1.
+## Etapa 2. Validação e Análise
+
+Executar quando o usuário responder exatamente `CONTINUAR` após copiar os PDFs ou quando a competência já iniciar com arquivos em source/. Usar a mesma competência definida na Etapa 1.
 
 Antes de qualquer análise:
 
@@ -82,7 +107,7 @@ Antes de qualquer análise:
 5. Registrar os arquivos no manifest.
 6. Detectar duplicidades.
 7. Detectar mistura de períodos.
-8. Confirmar Google Analytics 4, Google Ads, Google Search Console e SEMrush.
+8. Confirmar Google Analytics 4, Google Search Console e SEMrush.
 
 Uma fonte pode estar presente dentro de relatório consolidado desde que o bloco esteja claramente identificado, os dados necessários estejam legíveis, o manifest registre essa condição e exista evidência suficiente para gerar a análise.
 
@@ -110,7 +135,6 @@ Gerar obrigatoriamente:
 
 ```text
 reports/${COMPETENCIA}/analysis/ga4_analise.md
-reports/${COMPETENCIA}/analysis/google_ads_analise.md
 reports/${COMPETENCIA}/analysis/gsc_analise.md
 reports/${COMPETENCIA}/analysis/semrush_analise.md
 reports/${COMPETENCIA}/output/resumo_executivo.md
@@ -121,13 +145,14 @@ reports/${COMPETENCIA}/output/resumo_executivo.md
 - comparar a competência atual com o mês imediatamente anterior;
 - aplicar camada mínima de evidência numérica;
 - incluir valor atual, valor anterior, variação absoluta e variação percentual quando disponíveis;
-- não criar tabelas;
+- evitar tabelas nas análises técnicas;
+- permitir tabelas curtas no resumo executivo quando melhorarem a leitura;
 - não usar emojis ou travessões;
 - não citar nomes dos PDFs ou incluir referências no texto final;
 - não repetir extensivamente o dashboard;
 - não transformar hipótese em fato;
 - não afirmar causalidade sem evidência;
-- correlacionar as quatro fontes;
+- correlacionar as três fontes;
 - diferenciar volume de eficiência;
 - registrar divergências entre ferramentas;
 - considerar histórico antes de tratar variação pontual como tendência;
@@ -137,17 +162,6 @@ reports/${COMPETENCIA}/output/resumo_executivo.md
 ## Regras Obrigatórias de GA4
 
 A análise deve considerar, quando disponíveis, usuários ativos, novos usuários, sessões, sessões engajadas, taxa de engajamento, tempo médio de engajamento, visualizações, eventos, eventos principais, canais, origem e mídia, páginas, países, cidades, dispositivos e eventos personalizados do AzMina.
-
-## Regras Obrigatórias de Google Ads
-
-A análise deve considerar, quando disponíveis, impressões, cliques, CTR, custo, CPC, CPM, conversões, todas as conversões, taxa de conversão, CPA, custo por todas as conversões, ROAS, campanhas, grupos, anúncios, palavras-chave, dispositivos, demanda e sazonalidade.
-
-- não interpretar queda isolada como deterioração estrutural;
-- verificar se houve redução de procura no período;
-- considerar o comportamento dos meses anteriores;
-- diferenciar redução de demanda de perda de eficiência;
-- identificar onde a ineficiência está concentrada;
-- evitar mudanças amplas com base em um único mês atípico.
 
 ## Regras Obrigatórias de Google Search Console
 
@@ -174,13 +188,12 @@ As recomendações devem ser separadas em Alta prioridade, Média prioridade e B
 
 ## Interrupção para Revisão Humana
 
-Após gerar os cinco arquivos Markdown, interromper e solicitar exatamente:
+Após gerar os quatro arquivos Markdown, interromper e solicitar exatamente:
 
 ```text
 Revise os arquivos gerados:
 
 reports/${COMPETENCIA}/analysis/ga4_analise.md
-reports/${COMPETENCIA}/analysis/google_ads_analise.md
 reports/${COMPETENCIA}/analysis/gsc_analise.md
 reports/${COMPETENCIA}/analysis/semrush_analise.md
 reports/${COMPETENCIA}/output/resumo_executivo.md
@@ -198,7 +211,7 @@ Executar somente quando o usuário responder exatamente `APROVADO PARA ENCERRAME
 
 O Codex deve:
 
-1. Confirmar a existência dos cinco arquivos Markdown.
+1. Confirmar a existência dos quatro arquivos Markdown.
 2. Confirmar a aprovação explícita.
 3. Atualizar history/evolucao_mensal.md.
 4. Atualizar history/indicadores_historicos.csv.
@@ -216,7 +229,7 @@ O Codex deve:
 
 Em history/evolucao_mensal.md, registrar de forma sintética competência, principais números aprovados, evolução, regressão ou estabilidade, principais conclusões, principais recomendações, hipóteses relevantes e pontos que devem ser acompanhados.
 
-Em history/indicadores_historicos.csv, registrar somente os principais indicadores comparáveis das quatro fontes. Não registrar todas as métricas disponíveis.
+Em history/indicadores_historicos.csv, registrar somente os principais indicadores comparáveis das três fontes. Não registrar todas as métricas disponíveis.
 
 ## Regras de Atualização de Knowledge
 
@@ -246,7 +259,6 @@ Ao final do pipeline, a competência deve conter:
 ```text
 reports/${COMPETENCIA}/source/
 reports/${COMPETENCIA}/analysis/ga4_analise.md
-reports/${COMPETENCIA}/analysis/google_ads_analise.md
 reports/${COMPETENCIA}/analysis/gsc_analise.md
 reports/${COMPETENCIA}/analysis/semrush_analise.md
 reports/${COMPETENCIA}/output/resumo_executivo.md

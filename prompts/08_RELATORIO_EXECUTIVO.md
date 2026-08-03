@@ -2,16 +2,15 @@
 ## Objetivo
 Este documento define a estrutura oficial do relatório executivo do AzMina Reporting.
 O relatório executivo representa o principal entregável ao cliente.
-Ele deve sintetizar, em linguagem clara e orientada à decisão, as informações estratégicas extraídas das quatro fontes obrigatórias:
+Ele deve sintetizar, em linguagem clara e orientada à decisão, as informações estratégicas extraídas das três fontes obrigatórias:
 - Google Analytics 4;
-- Google Ads;
 - Google Search Console;
 - SEMrush.
 O relatório executivo não substitui os relatórios técnicos.
 Os relatórios técnicos permanecem como documentação detalhada da competência.
 Sua função é transformar evidências, interpretações e recomendações em uma leitura única, coerente e útil para a tomada de decisão.
 O documento deve responder ao que mais importa para o projeto naquele mês, sem reproduzir a lógica dos dashboards e sem repetir todo o conteúdo das análises individuais.
-O relatório executivo deve ser produzido após a conclusão das quatro análises técnicas.
+O relatório executivo deve ser produzido após a conclusão das três análises técnicas.
 Ele deve considerar os fatos relevantes identificados nessas análises, mas deve selecionar apenas o que tem impacto executivo.
 O leitor deve terminar o relatório entendendo:
 - o principal comportamento da competência;
@@ -98,7 +97,6 @@ Deve contextualizar histórico quando necessário.
 Não deve repetir números excessivamente.
 O Resumo Geral deve responder:
 - o período foi de crescimento, retração, estabilidade ou sinais mistos?
-- o movimento principal ocorreu em audiência, busca orgânica, mídia paga, engajamento, conversão ou mensuração?
 - houve ganho de volume, ganho de eficiência, perda de volume ou perda de eficiência?
 - a leitura atual confirma, rompe ou relativiza o histórico?
 - existe algum cuidado metodológico que afeta a interpretação?
@@ -141,7 +139,6 @@ Um bom ponto de atenção explica:
 - qual risco isso cria;
 - qual impacto pode gerar;
 - se exige ação, teste, validação ou acompanhamento.
-Pontos de atenção podem envolver perda orgânica, CTR baixo, piora de mídia paga, queda de conversões, volume sem engajamento, mensuração, divergências ou dependência excessiva.
 O tom deve ser proporcional e sem alarmismo.
 Quando a evidência for limitada, recomendar acompanhamento ou validação.
 Quando o risco for confirmado e relevante, orientar ação mais direta.
@@ -197,14 +194,12 @@ O objetivo é ampliar alcance qualificado preservando rigor editorial.
 # COMO CONSOLIDAR AS FONTES
 O relatório executivo não deve possuir capítulos separados de:
 GA4.
-Google Ads.
 GSC.
 SEMrush.
-As quatro fontes devem ser integradas em uma única narrativa.
+As três fontes devem ser integradas em uma única narrativa.
 O relatório deve parecer uma análise única, não um agrupamento de dashboards.
 Cada fonte deve entrar conforme contribui para a leitura.
 GA4 ajuda a explicar audiência, aquisição, comportamento, engajamento, eventos e comportamento pós clique.
-Google Ads ajuda a explicar exposição paga, demanda, custo, cliques, conversões, eficiência e campanhas.
 Google Search Console ajuda a explicar presença orgânica real no Google, cliques, impressões, CTR, posição, páginas e consultas.
 SEMrush ajuda a complementar SEO, monitoramento, rankings, oportunidades, auditoria e contexto mensal.
 Quando necessário, citar a origem da evidência de forma natural.
@@ -212,15 +207,12 @@ Exemplos adequados de referência natural:
 - a leitura orgânica é reforçada pelo Search Console;
 - o comportamento pós clique no GA4 sugere cautela;
 - o comparativo mensal do SEMrush complementa a análise de visibilidade;
-- os dados de Google Ads indicam perda de eficiência em campanha específica.
 Não transformar a origem da evidência em título de capítulo.
 Não escrever um parágrafo isolado para cada ferramenta se isso quebrar a fluidez da síntese.
 As fontes devem dialogar.
 Quando GA4 e Search Console apontarem a mesma direção, a confiança aumenta.
-Quando Google Ads indicar queda e GA4 mostrar piora pós clique, a hipótese de eficiência menor ganha força.
 Quando SEMrush divergir do Search Console, a divergência deve ser registrada.
 Quando uma fonte for mais adequada para determinada pergunta, respeitar sua natureza.
-Search Console responde por cliques e impressões orgânicas reais, GA4 por comportamento no site e Google Ads por mídia paga.
 SEMrush é fonte obrigatória complementar, mas não substitui dados reais de tráfego orgânico quando eles existirem no Search Console.
 # O QUE PRIORIZAR
 O relatório executivo deve priorizar mudanças relevantes, ou seja, aquelas que alteram a leitura estratégica do período.
@@ -265,7 +257,6 @@ Nunca interpretar posição média de forma invertida.
 Nunca usar gráfico anual do SEMrush como comparação mensal.
 Nunca escolher arbitrariamente uma fonte para confirmar uma narrativa.
 Nunca omitir limitações de mensuração quando elas afetarem a decisão.
-Nunca recomendar reestruturação ampla de Google Ads com base em um mês isolado.
 Nunca recomendar alterações editoriais que comprometam precisão em temas sensíveis.
 Nunca transformar o relatório em retrospectiva longa.
 Nunca citar nomes de arquivos de origem no texto entregue ao cliente.
@@ -425,7 +416,7 @@ Antes de considerar o relatório executivo pronto, verificar:
 - a linguagem é consistente;
 - o tom é consultivo;
 - o texto é proporcional à evidência;
-- não há tabelas;
+- tabelas, quando existirem, são curtas, legíveis e ajudam a comparação ou a priorização;
 - não há emojis;
 - não há travessões;
 - não há referências a PDFs;
@@ -434,7 +425,7 @@ Antes de considerar o relatório executivo pronto, verificar:
 - não há causalidade sem evidência;
 - hipóteses relevantes estão tratadas como hipóteses;
 - divergências relevantes foram registradas;
-- as quatro fontes foram integradas corretamente;
+- as três fontes foram integradas corretamente;
 - o relatório não possui capítulos separados por ferramenta;
 - o histórico aparece apenas quando muda a interpretação;
 - as recomendações respeitam o contexto editorial;
@@ -444,7 +435,7 @@ Antes de considerar o relatório executivo pronto, verificar:
 - o relatório executivo sintetiza, não copia;
 - relatórios técnicos guardam detalhe, o executivo guarda decisão;
 - a estrutura oficial deve ser preservada;
-- as quatro fontes devem formar uma narrativa única;
+- as três fontes devem formar uma narrativa única;
 - não criar capítulos separados por ferramenta;
 - começar pela leitura estratégica do período;
 - números sustentam conclusões, mas não dominam o texto;

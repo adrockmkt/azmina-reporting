@@ -4,7 +4,7 @@
 
 ## Objetivo
 
-Este documento define como interpretar e correlacionar dados de Google Analytics 4, Google Ads, Google Search Console e SEMrush. Seu objetivo é evitar análises isoladas, conclusões frágeis, causalidade não comprovada, leitura invertida de métricas, confusão entre volume e eficiência, recomendações genéricas e mudanças estruturais baseadas em variações pontuais.
+Este documento define como interpretar e correlacionar dados de Google Analytics 4, Google Search Console e SEMrush. Seu objetivo é evitar análises isoladas, conclusões frágeis, causalidade não comprovada, leitura invertida de métricas, confusão entre volume e eficiência, recomendações genéricas e mudanças estruturais baseadas em variações pontuais.
 
 Usar em conjunto com prompts/00_MASTER_SPECIFICATION.md, prompts/02_ESTILO_DE_ESCRITA.md, prompts/06_HIPOTESES_E_CONFIANCA.md, prompts/07_ESTILO_CONSULTIVO.md e prompts/08_RELATORIO_EXECUTIVO.md.
 
@@ -30,7 +30,7 @@ A análise deve responder: o que mudou, onde mudou, quanto mudou, qual fonte sus
 
 ## Validação Antes da Análise
 
-Nenhuma análise pode começar antes de validar a competência e o manifest.json, confirmar as quatro fontes obrigatórias, verificar consistência de períodos, legibilidade dos PDFs, possíveis duplicidades, pertencimento dos dados ao mês ativo e a definição dos períodos atual e anterior.
+Nenhuma análise pode começar antes de validar a competência e o manifest.json, confirmar as três fontes obrigatórias, verificar consistência de períodos, legibilidade dos PDFs, possíveis duplicidades, pertencimento dos dados ao mês ativo e a definição dos períodos atual e anterior.
 
 Interromper quando houver fonte obrigatória ausente, mistura de competências, dados incompatíveis, arquivo ilegível, comparação ambígua ou ausência de informação mínima. Não gerar análise parcial quando a ausência comprometer a interpretação consolidada.
 
@@ -41,10 +41,6 @@ Nenhuma fonte é sempre superior. Cada uma responde a pergunta distinta e a inte
 ### Google Analytics 4
 
 Responde principalmente sobre audiência, comportamento, aquisição, canais, engajamento, eventos, consumo de conteúdo, páginas, países, dispositivos e comportamento pós clique.
-
-### Google Ads
-
-Responde principalmente sobre exposição paga, geração de tráfego, eficiência de mídia, custo, conversões, campanhas, grupos, anúncios, palavras-chave, dispositivos e captura da demanda disponível.
 
 ### Google Search Console
 
@@ -59,7 +55,6 @@ Responde principalmente sobre análise mensal complementar ao Search Console, p�
 1. Validar competência e manifest.
 2. Ler relatório consolidado geral, quando existir.
 3. Ler GA4 para compreender audiência e comportamento.
-4. Ler Google Ads para compreender mídia paga e demanda.
 5. Ler Google Search Console para compreender busca orgânica.
 6. Ler relatório específico do SEMrush.
 7. Consultar history/.
@@ -71,7 +66,7 @@ Responde principalmente sobre análise mensal complementar ao Search Console, p�
 13. Definir recomendações.
 14. Gerar análises individuais e consolidar o resumo executivo.
 
-A ordem pode ser ajustada quando PDFs estiverem consolidados, mas as quatro fontes devem ser identificadas individualmente.
+A ordem pode ser ajustada quando PDFs estiverem consolidados, mas as três fontes devem ser identificadas individualmente.
 
 ## Camada Mínima de Evidência Numérica
 
@@ -136,25 +131,6 @@ Pode indicar redução de demanda, perda de consultas de alto volume, melhora em
 
 Pode indicar aumento de demanda, crescimento de impressões, ganho em termos amplos ou melhora de CTR compensando perda de posição.
 
-## Regras de Correlação entre Google Ads e GA4
-
-- Cliques pagos crescem e sessões Google CPC não acompanham: investigar mensuração, redirecionamentos, consentimento, parâmetros, sessões não atribuídas e diferença entre clique e sessão.
-- Sessões pagas crescem e engajamento cai: pode indicar expansão de alcance com menor qualidade pós clique.
-- Impressões estáveis e conversões caem: pode indicar menor intenção de busca, queda de taxa de conversão, mudança de mix de campanha, piora pós clique ou evento de conversão alterado.
-- Custo cai e conversões caem mais: indica perda de eficiência, não apenas redução de investimento.
-- Custo cresce e conversões crescem proporcionalmente: avaliar CPA, taxa de conversão e qualidade antes de concluir melhora.
-- Google CPC com melhor engajamento no GA4: usar como evidência de qualidade do tráfego, sem confundir engajamento com conversão final.
-
-## Regras de Correlação entre Google Ads e Demanda
-
-Avaliar impressões, cliques, termos de pesquisa, comportamento histórico, sazonalidade editorial, temas ativos, campanhas pausadas ou ativadas, disponibilidade de busca e sequência dos meses anteriores.
-
-- queda de impressões pode indicar menor demanda ou perda de participação;
-- impressões estáveis com queda de conversão indicam problema posterior à exposição;
-- queda de cliques com CTR estável pode indicar menor procura;
-- queda de CTR com impressões estáveis pode indicar menor aderência dos anúncios;
-- queda após meses consecutivos de alta deve ser contextualizada antes de sugerir reestruturação.
-
 ## Regras de Correlação entre GSC e SEMrush
 
 GSC é a fonte real de cliques e impressões orgânicas. SEMrush pode trazer recortes, monitoramento e contexto adicional. Verificar divergências por período, dispositivo, país e filtro.
@@ -183,26 +159,6 @@ Rankings do SEMrush não substituem posição média do GSC e estimativas do SEM
 Exemplos: página com visualizações e eventos, mas tempo médio zerado; tráfego concentrado em países ou cidades atípicas; alto volume de novos usuários com baixo engajamento; eventos incompatíveis com sessões; divergência entre testes manuais e dados consolidados; sessões com comportamento provável de crawler, monitoramento ou pré-visualização.
 
 Conduta: declarar anomalia, separar dado observado de hipótese, evitar corrigir dados retroativamente sem evidência, recomendar validação via DebugView, GTM, logs ou testes controlados e não concluir automaticamente falha do GA4.
-
-## Regras Específicas de Google Ads
-
-- começar pelos indicadores gerais;
-- avaliar conversões e todas as conversões separadamente;
-- entender eventos que compõem conversões;
-- avaliar custo, CPA, taxa de conversão, CPC, CTR e ROAS;
-- separar volume e eficiência;
-- identificar campanhas, grupos e palavras-chave responsáveis pelo resultado;
-- observar dispositivos e criativos quando houver dado suficiente;
-- considerar Google Ad Grants quando aplicável;
-- tratar conversões fracionadas conforme a atribuição;
-- não comparar campanhas de objetivos diferentes apenas pelo CPA;
-- não recomendar pausa por percentual alto em base pequena;
-- priorizar realocação quando a ineficiência estiver concentrada;
-- identificar termos amplos ou pouco aderentes.
-
-### Regras para Google Ad Grants
-
-Quando aplicável, considerar natureza não comercial da conta, limite e regras do programa, relevância e qualidade, aderência à missão, diferença entre valor de mídia e investimento financeiro real, objetivos de tráfego, leitura, newsletter, app e apoio e impossibilidade de interpretar ROAS de forma puramente comercial quando não houver receita real.
 
 ## Regras Específicas de GSC
 
@@ -341,7 +297,6 @@ Toda recomendação deve ser específica, executável, conectada ao diagnóstico
 - nunca interpretar posição média de forma invertida;
 - nunca destacar percentual sem volume;
 - nunca tratar impressão como clique, clique como sessão, sessão como usuário ou evento como conversão final sem contexto;
-- nunca tratar todas as conversões do Google Ads como equivalentes;
 - nunca transformar hipótese em fato;
 - nunca ocultar divergências;
 - nunca recomendar mudança ampla com evidência fraca;
@@ -358,7 +313,7 @@ Toda recomendação deve ser específica, executável, conectada ao diagnóstico
 Antes de finalizar uma análise, validar:
 
 - competência, período atual e período anterior corretos;
-- quatro fontes identificadas;
+- três fontes identificadas;
 - números revisados e cálculos coerentes;
 - posição média interpretada corretamente;
 - comparação mensal separada da anual;

@@ -10,12 +10,11 @@ O objetivo não é apenas resumir PDFs ou reproduzir dashboards. O sistema deve 
 
 O domínio principal analisado é <https://azmina.com.br/>.
 
-As quatro fontes analíticas obrigatórias são:
+As três fontes analíticas obrigatórias são:
 
 1. Google Analytics 4
-2. Google Ads
-3. Google Search Console
-4. SEMrush
+2. Google Search Console
+3. SEMrush
 
 Cada fonte obrigatória deve gerar uma análise individual em Markdown.
 
@@ -38,7 +37,7 @@ O Codex é responsável por:
 - validar os PDFs originais;
 - gerar ou atualizar manifest.json;
 - carregar prompts, knowledge e history;
-- gerar análises individuais de GA4, Google Ads, GSC e SEMrush;
+- gerar análises individuais de GA4, GSC e SEMrush;
 - gerar resumo_executivo.md;
 - interromper para revisão humana;
 - atualizar history, knowledge aplicável e changelog somente após aprovação explícita.
@@ -66,7 +65,6 @@ azmina-reporting/
 │       ├── source/
 │       ├── analysis/
 │       │   ├── ga4_analise.md
-│       │   ├── google_ads_analise.md
 │       │   ├── gsc_analise.md
 │       │   └── semrush_analise.md
 │       ├── output/
@@ -109,7 +107,7 @@ azmina-reporting/
 - README.md apresenta o projeto, sua finalidade e o uso do repositório.
 - reports/ armazena cada competência mensal e seus entregáveis.
 - source/ guarda os PDFs originais da competência.
-- analysis/ guarda as quatro análises técnicas individuais em Markdown.
+- analysis/ guarda as três análises técnicas individuais em Markdown.
 - output/ guarda o resumo executivo e os documentos finais.
 - manifest.json identifica a competência, os arquivos de origem e o estado de validação e encerramento.
 - history/ guarda resultados mensais aprovados e indicadores comparáveis.
@@ -185,22 +183,6 @@ Exemplos de eventos recorrentes são article_view, azmina-real-scroll, scroll_25
 
 Entrega obrigatória: `reports/AAAA-MM/analysis/ga4_analise.md`.
 
-### Google Ads
-
-A análise deve considerar, quando disponíveis, impressões, cliques, CTR, custo, CPC médio, CPM, conversões, todas as conversões, taxa de conversão, custo por conversão, custo por todas as conversões, ROAS, campanhas, grupos de anúncios, anúncios, palavras-chave, termos de pesquisa, dispositivos, sazonalidade e variação da demanda.
-
-Regras permanentes:
-
-- nunca interpretar uma queda isolada como deterioração estrutural;
-- verificar se a procura do período diminuiu;
-- considerar a sequência dos meses anteriores;
-- diferenciar redução de demanda de perda de eficiência;
-- identificar campanhas, grupos e palavras-chave responsáveis pelo resultado;
-- evitar mudanças amplas com base em apenas um mês atípico;
-- priorizar realocação de orçamento quando a ineficiência estiver concentrada.
-
-Entrega obrigatória: `reports/AAAA-MM/analysis/google_ads_analise.md`.
-
 ### Google Search Console
 
 A análise deve considerar cliques, impressões, CTR, posição média, páginas, consultas, países, dispositivos, crescimento e perda de visibilidade, oportunidades de CTR e recuperação ou perda de ranking.
@@ -231,18 +213,17 @@ Entrega obrigatória: `reports/AAAA-MM/analysis/semrush_analise.md`.
 
 Toda afirmação de crescimento, queda, melhora, piora, avanço, regressão, estabilidade, ganho ou perda de eficiência deve incluir, quando disponíveis, valor atual, valor anterior, variação absoluta e variação percentual.
 
-Não criar tabelas, salvo solicitação explícita. Não listar todas as métricas disponíveis. Selecionar apenas os números que sustentam a leitura estratégica.
+Evitar tabelas nas análises técnicas, salvo solicitação explícita. Tabelas curtas são permitidas no resumo executivo quando melhorarem a leitura executiva. Não listar todas as métricas disponíveis. Selecionar apenas os números que sustentam a leitura estratégica.
 
 ## Correlação obrigatória
 
-O sistema deve correlacionar GA4 com GSC, GSC com SEMrush, Google Ads com GA4, Google Ads com procura e sazonalidade, páginas orgânicas com comportamento pós clique e histórico mensal com a competência atual.
+O sistema deve correlacionar GA4 com GSC, GSC com SEMrush, páginas orgânicas com comportamento pós clique e histórico mensal com a competência atual.
 
 Exemplos de leitura:
 
 - crescimento de cliques no GSC acompanhado de crescimento orgânico no GA4 reforça avanço orgânico;
 - queda de cliques no GSC e queda de sessões orgânicas no GA4 reforçam retração de demanda ou visibilidade;
 - aumento de tráfego no GA4 com queda de engajamento indica crescimento de audiência com menor profundidade;
-- queda de conversões em Google Ads com impressões estáveis pode indicar menor intenção pós clique;
 - melhora de CTR com queda de impressões representa maior eficiência sobre uma base menor;
 - divergências entre fontes devem ser declaradas, não ocultadas.
 
@@ -252,7 +233,7 @@ Exemplos de leitura:
 2. Importação dos PDFs.
 3. Validação dos arquivos.
 4. Carregamento de prompts, knowledge e history.
-5. Geração das quatro análises individuais.
+5. Geração das três análises individuais.
 6. Geração do resumo executivo.
 7. Revisão humana.
 8. Finalização editorial no ChatGPT.
@@ -262,7 +243,7 @@ A competência deve estar no formato AAAA-MM. O Codex deve interromper após pre
 
 ## Estrutura do resumo executivo
 
-O resumo executivo deve consolidar as quatro fontes sem parecer uma soma de relatórios. A estrutura obrigatória é:
+O resumo executivo deve consolidar as três fontes sem parecer uma soma de relatórios. A estrutura obrigatória é:
 
 1. Resumo Geral
 2. Pontos Fortes
@@ -281,7 +262,8 @@ Os relatórios devem:
 - ser consultivos e objetivos;
 - explicar impacto;
 - evitar repetição do dashboard;
-- não usar emojis, tabelas ou travessões;
+- não usar emojis ou travessões;
+- usar tabelas apenas quando forem curtas, executivas e úteis para comparação;
 - não citar nomes de PDFs;
 - não usar referências ou citações no texto entregue ao cliente;
 - não usar linguagem de resumo automático;
@@ -301,7 +283,7 @@ Após a aprovação humana, atualizar:
 - knowledge/11_CHANGELOG.md;
 - manifest.json.
 
-history/indicadores_historicos.csv deve contemplar indicadores principais das quatro fontes, quando disponíveis.
+history/indicadores_historicos.csv deve contemplar indicadores principais das três fontes, quando disponíveis.
 
 ## Critérios de qualidade
 
@@ -315,13 +297,14 @@ history/indicadores_historicos.csv deve contemplar indicadores principais das qu
 - preservação dos PDFs;
 - consistência histórica;
 - ausência de repetição operacional;
-- ausência de emojis, tabelas, travessões e referências no texto final.
+- ausência de emojis, travessões e referências no texto final.
+- tabelas, quando existirem, devem ser curtas, legíveis e acompanhadas de interpretação.
 
 ## Critério de conclusão
 
 ### Pronta para revisão humana
 
-Quando as quatro análises e o resumo executivo estiverem gerados.
+Quando as três análises e o resumo executivo estiverem gerados.
 
 ### Operacionalmente concluída
 
@@ -336,7 +319,6 @@ Quando DOCX e PDF forem gerados no ChatGPT e armazenados em output/.
 ```text
 reports/AAAA-MM/source/
 reports/AAAA-MM/analysis/ga4_analise.md
-reports/AAAA-MM/analysis/google_ads_analise.md
 reports/AAAA-MM/analysis/gsc_analise.md
 reports/AAAA-MM/analysis/semrush_analise.md
 reports/AAAA-MM/output/resumo_executivo.md

@@ -55,7 +55,7 @@ Aprendizado candidato pertence a history/ até promoção.
 - definicao do AzMina Reporting como framework mensal de analise;
 - definicao de `reports/AAAA-MM/` como unidade operacional;
 - separacao entre `source/`, `analysis/`, `output/` e `manifest.json`;
-- definicao das quatro fontes obrigatorias;
+- definicao das três fontes obrigatorias;
 - separacao entre prompts, knowledge, history e reports;
 - definicao do Prompt 01 como controlador de execucao;
 - formalizacao da revisao humana antes do encerramento;

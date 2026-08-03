@@ -85,7 +85,6 @@ o aprendizado melhora o modo de interpretar, validar ou recomendar.
 Critério estrutural:
 o aprendizado se tornou decisão aprovada.
 Critério de ferramenta:
-a limitação é permanente ou recorrente em GA4, Google Ads, GSC ou SEMrush.
 Critério de confirmação:
 o comportamento foi validado por histórico, múltiplas fontes ou revisão humana.
 Critério de risco:
@@ -230,17 +229,6 @@ Risco evitado:
 atribuir comportamento humano a possível problema de mensuração.
 Quando revisar:
 revisar se a implementação de eventos mudar.
-### Queda em Ads não prova deterioração
-Descrição:
-Queda de conversões ou cliques em Google Ads pode refletir demanda, sazonalidade, mix, mensuração ou eficiência.
-Origem:
-regra metodológica consolidada.
-Aplicação:
-avaliar impressões, CTR, CPC, CPA, taxa de conversão, campanhas e histórico antes de recomendar reestruturação.
-Risco evitado:
-fazer mudança ampla com evidência fraca.
-Quando revisar:
-revisar se a estrutura de campanhas ou objetivos mudar.
 ### Divergência entre fontes deve ser declarada
 Descrição:
 Ferramentas diferentes podem divergir por período, filtro, atribuição, recorte ou definição.

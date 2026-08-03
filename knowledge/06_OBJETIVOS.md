@@ -19,7 +19,7 @@ Este documento deve ser usado para responder:
 - quais limites devem ser respeitados;
 - como avaliar se o framework está cumprindo sua função.
 ## Objetivo Central do Projeto
-O objetivo central do AzMina Reporting é transformar dados de Google Analytics 4, Google Ads, Google Search Console e SEMrush em análises confiáveis, comparáveis e orientadas à decisão.
+O objetivo central do AzMina Reporting é transformar dados de Google Analytics 4, Google Search Console e SEMrush em análises confiáveis, comparáveis e orientadas à decisão.
 Esse objetivo combina análise técnica, síntese consultiva, documentação histórica e apoio à ação.
 O projeto não existe para transcrever dashboards.
 O projeto não existe para acumular métricas.
@@ -35,7 +35,6 @@ Nesses casos, o objetivo é reduzir risco de interpretação, não forçar concl
 ## Objetivos Estratégicos
 O AzMina Reporting deve aumentar a compreensão sobre audiência.
 Deve fortalecer a leitura do tráfego orgânico.
-Deve melhorar a eficiência da mídia paga.
 Deve identificar oportunidades editoriais relevantes.
 Deve melhorar a qualidade da mensuração.
 Deve reduzir dependência de interpretações manuais dispersas.
@@ -65,7 +64,6 @@ Deve avaliar páginas e conteúdos.
 Deve entender países, cidades e dispositivos.
 Deve diferenciar crescimento de audiência e qualidade de consumo.
 Deve separar usuários, sessões, visualizações, eventos e conversões.
-Deve correlacionar Google CPC no GA4 com Google Ads quando aplicável.
 Deve correlacionar Organic Search no GA4 com GSC e SEMrush.
 Deve avaliar se crescimento de tráfego trouxe engajamento proporcional.
 Deve identificar quando aumento de usuários pode representar alcance sem profundidade.
@@ -91,23 +89,6 @@ Deve usar SEMrush como fonte complementar de monitoramento, oportunidade e conte
 Deve preservar precisão editorial.
 Deve evitar recomendações de SEO que sacrifiquem segurança informacional.
 SEO deve ampliar alcance qualificado, não apenas volume.
-## Objetivos de Google Ads
-O projeto deve capturar demanda aderente.
-Deve manter eficiência de mídia.
-Deve identificar campanhas, grupos, anúncios e termos responsáveis pelo resultado.
-Deve controlar CPA quando houver conversões comparáveis.
-Deve acompanhar conversões e todas as conversões com distinção.
-Deve distinguir demanda de desempenho.
-Deve reduzir desperdício quando houver evidência de ineficiência.
-Deve apoiar realocação de orçamento quando a concentração de problema estiver clara.
-Deve preservar aderência institucional.
-Deve respeitar contexto de Google Ad Grants quando aplicável.
-Deve melhorar qualidade pós clique.
-Deve monitorar dispositivos, termos de pesquisa e qualidade do tráfego.
-Deve evitar reestruturações amplas com base em um único mês atípico.
-Deve diferenciar queda de procura, perda de exposição, perda de CTR, aumento de CPC e queda de taxa de conversão.
-Deve avaliar se a mídia está atraindo pessoas coerentes com os objetivos editoriais e institucionais.
-Google Ads deve ser lido como sistema de captura de demanda e orientação de ação, não apenas como gasto e clique.
 ## Objetivos de Conteúdo
 O projeto deve identificar temas com demanda qualificada.
 Deve acompanhar conteúdos históricos.
@@ -154,7 +135,7 @@ Deve evitar transcrição de dashboard.
 Deve explicar o que mudou.
 Deve explicar por que importa.
 Deve indicar o próximo passo.
-Deve integrar GA4, Google Ads, GSC e SEMrush sem transformar cada fonte em capítulo isolado.
+Deve integrar GA4, GSC e SEMrush sem transformar cada fonte em capítulo isolado.
 Deve preservar hipóteses como hipóteses.
 Deve registrar divergências quando elas mudarem a decisão.
 Deve diferenciar pontos fortes de pontos de atenção.
@@ -238,11 +219,6 @@ A análise deve explicar comportamento pós clique.
 Deve diferenciar alcance e profundidade.
 Deve registrar anomalias relevantes.
 Deve orientar validação quando a coleta for incerta.
-### Google Ads
-Sucesso em Google Ads inclui eficiência, aderência e clareza sobre demanda.
-A análise deve localizar responsáveis por ganhos ou perdas.
-Deve evitar mudanças amplas sem evidência.
-Deve respeitar objetivos institucionais e contexto de Google Ad Grants quando aplicável.
 ### GSC
 Sucesso em GSC inclui leitura de visibilidade, cliques, CTR, posição média e oportunidades.
 A análise deve distinguir demanda, ranking e captura de clique.
@@ -338,7 +314,6 @@ Alterações neste arquivo podem exigir revisão de prompts, history ou decisõe
 - indicador só importa quando ajuda a decidir;
 - audiência deve ser lida com engajamento;
 - SEO deve preservar responsabilidade editorial;
-- Google Ads deve separar demanda e eficiência;
 - conteúdo não deve ser criado apenas por volume de busca;
 - mensuração duvidosa exige validação;
 - histórico contextualiza, mas não substitui dados atuais;

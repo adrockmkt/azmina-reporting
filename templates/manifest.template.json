@@ -3,7 +3,6 @@
   "status": "preparacao",
   "fontes": {
     "ga4": false,
-    "google_ads": false,
     "gsc": false,
     "semrush": false
   },
@@ -19,7 +18,6 @@
   ],
   "analysis": {
     "ga4": false,
-    "google_ads": false,
     "gsc": false,
     "semrush": false
   },

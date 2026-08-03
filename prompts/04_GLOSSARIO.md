@@ -1,7 +1,7 @@
 # 04 GLOSSÁRIO
 ## Objetivo
 Este documento padroniza a linguagem do framework AzMina Reporting.
-Ele define o vocabulário oficial usado nas análises de Google Analytics 4, Google Ads, Google Search Console e SEMrush.
+Ele define o vocabulário oficial usado nas análises de Google Analytics 4, Google Search Console e SEMrush.
 Nenhum termo importante deve possuir interpretações diferentes entre competências.
 Este documento não é um simples glossário.
 Ele define significado, contexto, interpretação correta, erros comuns, quando utilizar e quando evitar leituras equivocadas.
@@ -104,9 +104,6 @@ Erros comuns: tratar sempre como marca forte.
 Uso no framework: analisar com cautela e verificar contexto.
 ## Google CPC
 Conceito: tráfego pago atribuído ao Google com mídia cpc.
-Interpretação correta: indica visitas originadas de mídia paga.
-Erros comuns: confundir clique de Ads com sessão no GA4.
-Uso no framework: cruzar Google Ads com GA4 para avaliar pós clique.
 ## Referral
 Conceito: tráfego vindo de links em outros sites.
 Interpretação correta: indica referência externa identificada.
@@ -149,7 +146,6 @@ Interpretação: mede eficiência de custo para ação configurada.
 Erros comuns: comparar campanhas de objetivos distintos apenas por CPA.
 Cuidados: entender qual conversão compõe o indicador.
 ## Conversão
-Definição: ação definida como objetivo no Google Ads.
 Interpretação: indica resultado atribuído à campanha.
 Erros comuns: tratar toda conversão como valor final igual.
 Cuidados: verificar evento, atribuição e qualidade.
@@ -189,7 +185,6 @@ Interpretação: mostra demanda capturada de fato.
 Erros comuns: ignorar termos pouco aderentes.
 Cuidados: usar para ajustes e negativação quando aplicável.
 ## Índice de Qualidade
-Definição: indicador de qualidade e relevância no Google Ads.
 Interpretação: pode afetar custo e entrega.
 Erros comuns: tratar como único fator de desempenho.
 Cuidados: avaliar junto com CTR, anúncio e landing page.
@@ -441,7 +436,6 @@ Conversão como evento: nem todo evento é conversão estratégica.
 Demanda como desempenho: menor procura pode reduzir resultado sem piora operacional.
 Gráfico anual como mensal: gráfico anual contextualiza, mas não compara competência.
 Percentual sem contexto: alta percentual em base pequena pode ser ruído.
-Cliques como sessões: clique em Ads ou GSC pode não virar sessão no GA4.
 Ranking como tráfego: posição melhor não garante crescimento se a demanda cair.
 Volume como eficiência: mais cliques não significam melhor aproveitamento.
 Hipótese como fato: causa provável precisa de linguagem proporcional.

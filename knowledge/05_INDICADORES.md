@@ -83,9 +83,6 @@ Correlacionar com marca, recorrência, campanha e perda de atribuição.
 Erro comum: tratar sempre como força de marca.
 ### Google CPC
 Representa tráfego pago do Google atribuído no GA4.
-Interpretar como comportamento pós clique de mídia paga.
-Correlacionar com Google Ads.
-Erro comum: confundir clique de Ads com sessão no GA4.
 ### Páginas
 Representam URLs consumidas.
 Interpretar por volume, origem, engajamento e eventos.
@@ -127,8 +124,7 @@ Scrolls indicam profundidade de navegação, não leitura qualificada completa.
 Sessões relacionadas a app ou newsletter devem ser interpretadas pelo objetivo do projeto.
 apoie pode ser evento estratégico, mas depende da configuração.
 Cliques em lojas de aplicativos indicam intenção de saída para app, não instalação confirmada.
-## Indicadores de Google Ads
-### Impressões
+## Impressões
 Representam exibição dos anúncios.
 Correlacionar com demanda, orçamento, participação e CTR.
 Erro comum: tratar impressão como tráfego.
@@ -201,18 +197,8 @@ Quando disponível, representa parcela de exposição possível capturada.
 Correlacionar com orçamento, ranking e demanda.
 Erro comum: tratar baixa participação como problema sem avaliar objetivo.
 ### Índice de qualidade
-Quando disponível, indica relevância estimada pelo Google Ads.
 Correlacionar com CTR, anúncio e landing page.
 Erro comum: tratar como causa única do desempenho.
-## Conversões de Google Ads
-Conversões podem ser fracionadas pela atribuição.
-Todas as conversões podem incluir ações adicionais.
-Eventos diferentes não devem ser tratados como equivalentes.
-Valores atribuídos podem ser artificiais.
-ROAS pode não representar receita real.
-Contexto de Google Ad Grants exige cautela.
-Conversões devem ser explicadas pelo tipo de ação.
-Mudanças de configuração devem ser documentadas.
 ## Indicadores de GSC
 ### Cliques
 Representam cliques orgânicos vindos do Google.
@@ -409,18 +395,6 @@ Conjunto comparável possível:
 - Organic Search;
 - Direct;
 - Google CPC.
-### Google Ads
-Conjunto comparável possível:
-- impressões;
-- cliques;
-- CTR;
-- custo;
-- conversões;
-- taxa de conversão;
-- CPA;
-- ROAS;
-- principal campanha positiva;
-- principal campanha negativa.
 ### GSC
 Conjunto comparável possível:
 - cliques;

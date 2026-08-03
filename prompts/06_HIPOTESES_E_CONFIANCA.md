@@ -54,7 +54,6 @@ Exemplos:
 
 - crescimento simultâneo de cliques no Google Search Console e sessões orgânicas no Google Analytics 4;
 - perda de posição confirmada por Google Search Console e SEMrush;
-- queda de conversões em Google Ads acompanhada de queda de taxa de conversão e histórico recorrente de piora no mesmo tipo de campanha.
 
 Nesse nível, a conclusão pode ser comunicada com linguagem firme, desde que ainda preserve a diferença entre evidência e causalidade. Recomendações podem ser direcionadas para implementação quando o impacto for relevante.
 
@@ -69,7 +68,6 @@ Usar quando:
 Exemplos:
 
 - queda de impressões no Google Search Console com posição média estável, sugerindo redução de demanda orgânica;
-- aumento de CPA em Google Ads concentrado em campanhas com custo relevante;
 - melhora de CTR em páginas de alto volume sem sinal contrário em outras fontes.
 
 Nesse nível, a conclusão pode orientar priorização, desde que o texto não apresente causa não comprovada como fato.
@@ -86,7 +84,6 @@ Exemplos:
 
 - uma página ganha visualizações no Google Analytics 4, mas não há evidência suficiente sobre origem, intenção ou qualidade do tráfego;
 - uma consulta perde cliques no Google Search Console, mas impressões, CTR e posição permitem mais de uma explicação;
-- conversões caem em Google Ads sem confirmação clara de queda de demanda, piora de eficiência ou alteração de mensuração.
 
 Nesse nível, recomendações devem privilegiar testes, validações e acompanhamento no próximo ciclo.
 
@@ -357,7 +354,6 @@ Quando testes manuais não coincidirem com dados consolidados, registrar a diver
 
 Essas situações devem gerar hipóteses e recomendações de validação, nunca afirmações categóricas.
 
-# Regras para Google Ads
 
 Queda de conversões não significa automaticamente piora da campanha.
 
@@ -486,7 +482,6 @@ Nenhuma recomendação deve parecer mais urgente, ampla ou definitiva do que o n
 
 Os casos abaixo originaram regras permanentes do framework e devem ser usados como exemplos metodológicos.
 
-## Queda de Google Ads após meses consecutivos de crescimento
 
 Uma retração após meses positivos não deve ser tratada automaticamente como deterioração da conta. A hipótese inicial deve considerar redução de demanda, sazonalidade, variação de procura, alteração de mix de campanhas e comportamento de conversão.
 

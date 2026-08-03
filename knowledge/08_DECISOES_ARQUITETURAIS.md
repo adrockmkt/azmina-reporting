@@ -167,9 +167,8 @@ Quando revisar:
 Revisar se houver governança alternativa validada pela consultoria e pelo cliente.
 ## Quatro Fontes Obrigatórias
 Decisão:
-GA4, Google Ads, GSC e SEMrush são fontes obrigatórias.
+GA4, GSC e SEMrush são fontes obrigatórias.
 Motivação:
-As quatro fontes cobrem audiência, mídia paga, busca orgânica real e monitoramento complementar de SEO.
 Impacto:
 Cada fonte gera análise individual.
 Quando revisar:
@@ -231,7 +230,8 @@ Quando revisar:
 Revisar se as fontes mudarem definição de métricas ou comparabilidade.
 ## Linguagem Permanente
 Decisão:
-Os arquivos do framework usam português brasileiro, Markdown simples, sem emojis, sem tabelas e sem travessões tipográficos.
+Os arquivos do framework usam português brasileiro, Markdown simples, sem emojis e sem travessões tipográficos.
+Tabelas curtas são permitidas no resumo executivo quando melhorarem a leitura executiva.
 Motivação:
 Preservar consistência editorial e compatibilidade com os entregáveis.
 Impacto:

@@ -124,7 +124,7 @@ README.md, START_HERE.md, COMANDO.md, prompts e knowledge inicial.
 Motivação:
 Formalizar o processo mensal de análise, revisão, memória e entrega.
 Impacto:
-O projeto passou a operar com competências autocontidas, quatro fontes obrigatórias, análises individuais e resumo executivo.
+O projeto passou a operar com competências autocontidas, três fontes obrigatórias, análises individuais e resumo executivo.
 Tipo:
 arquitetura.
 Revisão:

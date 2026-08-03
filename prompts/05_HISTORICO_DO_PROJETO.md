@@ -49,7 +49,6 @@ Exemplo:
 - "Quedas orgânicas com posição estável podem indicar menor demanda" é aprendizado metodológico, quando validado.
 Exemplo:
 - "A campanha X teve CPA maior no mês" é resultado mensal.
-- "Queda de conversões em Google Ads não significa automaticamente piora da campanha" é conhecimento metodológico.
 Exemplo:
 - "A página Y teve CTR baixo" é resultado mensal.
 - "Páginas com muitas impressões e CTR baixo podem ser oportunidade" é regra de análise, quando houver volume e alinhamento editorial.
@@ -142,7 +141,7 @@ Ele não deve guardar todos os números.
 Ele não substitui arquivos mensais detalhados quando existirem.
 ## history/indicadores_historicos.csv
 `history/indicadores_historicos.csv` é a camada numérica comparável.
-Ele registra os principais indicadores mensais das quatro fontes, quando disponíveis.
+Ele registra os principais indicadores mensais das três fontes, quando disponíveis.
 Ele permite comparação objetiva entre competências.
 Ele ajuda a verificar crescimento, queda, estabilidade e mudança de patamar.
 Ele não deve conter interpretações longas.
@@ -239,7 +238,6 @@ Exemplos elegíveis:
 - SEMrush não substitui GSC para cliques reais;
 - posição média menor representa melhora;
 - tempo médio zerado no GA4 exige validação;
-- queda de conversões em Ads exige análise de demanda;
 - gráficos anuais não substituem comparação mensal.
 ## Conflitos de Conhecimento
 Dois conhecimentos permanentes contraditórios não podem coexistir como válidos.
@@ -409,7 +407,6 @@ Padrões recorrentes são comportamentos observados em múltiplas competências.
 Eles devem orientar contexto e hipótese.
 Eles não devem virar explicação automática.
 Exemplos possíveis:
-- queda após meses de crescimento em Ads;
 - divergência entre GSC e GA4;
 - CTR maior com impressões menores;
 - tempo médio zerado no GA4;
@@ -435,8 +432,6 @@ Pode incluir eventos personalizados.
 Pode incluir divergência entre teste manual e consolidado.
 Pode incluir indícios de tráfego automatizado.
 Resultados mensais de GA4 ficam em `history/`.
-## Particularidades do Google Ads
-Conhecimento permanente sobre Google Ads deve diferenciar demanda, campanha, orçamento e eficiência.
 Pode incluir impressões, CTR, CPC, CPA, taxa de conversão, histórico e sazonalidade.
 Pode incluir cautela com reestruturações amplas.
 Pode incluir avaliação separada por campanha, grupo e palavra-chave.
@@ -475,7 +470,7 @@ Exemplos:
 - separar Codex e ChatGPT;
 - preservar PDFs originais;
 - validar manifest antes da análise;
-- gerar quatro análises individuais;
+- gerar três análises individuais;
 - gerar resumo executivo consolidado;
 - interromper para revisão humana;
 - atualizar history e knowledge somente após aprovação;
@@ -530,7 +525,6 @@ Pertencem a `knowledge/`:
 Exemplos:
 - posição média menor representa melhora;
 - SEMrush não substitui GSC para cliques reais;
-- Google Ads deve ser analisado com demanda e histórico;
 - conteúdos sensíveis exigem rigor editorial;
 - PDFs originais devem ser preservados;
 - atualização de history e knowledge só ocorre após aprovação humana.

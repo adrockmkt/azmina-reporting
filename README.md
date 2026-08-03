@@ -6,7 +6,7 @@ Este repositório centraliza o processo mensal de análise dos dados digitais do
 
 Domínio principal: <https://azmina.com.br/>.
 
-O projeto transforma relatórios técnicos de Google Analytics 4, Google Ads, Google Search Console e SEMrush em:
+O projeto transforma relatórios técnicos de Google Analytics 4, Google Search Console e SEMrush em:
 
 - análises individuais em Markdown;
 - histórico comparável;
@@ -25,7 +25,7 @@ O processo distribui responsabilidades complementares entre Codex e ChatGPT.
 - valida estrutura e arquivos;
 - gera manifest.json;
 - lê prompts, knowledge e history;
-- produz as quatro análises individuais;
+- produz as três análises individuais;
 - produz resumo_executivo.md;
 - aguarda revisão humana;
 - atualiza histórico e memória somente após aprovação.
@@ -42,10 +42,6 @@ O processo distribui responsabilidades complementares entre Codex e ChatGPT.
 ### Google Analytics 4
 
 Sustenta a análise de audiência, sessões, usuários, engajamento, eventos, canais, páginas, países, cidades e dispositivos.
-
-### Google Ads
-
-Sustenta a análise de impressões, cliques, CTR, custo, CPC, conversões, CPA, ROAS, campanhas, grupos, anúncios, palavras-chave, dispositivos, demanda e sazonalidade.
 
 ### Google Search Console
 
@@ -69,7 +65,6 @@ azmina-reporting/
 │       ├── source/
 │       ├── analysis/
 │       │   ├── ga4_analise.md
-│       │   ├── google_ads_analise.md
 │       │   ├── gsc_analise.md
 │       │   └── semrush_analise.md
 │       ├── output/
@@ -103,6 +98,34 @@ Exemplo: `reports/2026-06/`.
 
 Cada competência é autocontida. Não misturar arquivos de meses diferentes nem criar análises fora da competência ativa.
 
+## Atalho de Preparação
+
+Para preparar uma competência pelo terminal, usar:
+
+```bash
+./start.command
+```
+
+O comando pergunta a competência, detecta pastas já criadas e confirma se existem arquivos em `reports/AAAA-MM/source/`.
+
+Também é possível informar a competência diretamente:
+
+```bash
+./start.command 2026-07
+```
+
+O atalho valida a competência, cria as pastas necessárias, valida a proteção de `source/` no `.gitignore` e cria `manifest.json` a partir do template quando ele ainda não existir.
+
+Se `source/` ainda estiver vazio, o atalho instrui o usuário a copiar os PDFs e rodar `./start.command` novamente.
+
+Se `source/` já tiver arquivos, o atalho inicia o Codex automaticamente para validação e análise da competência, sem exigir `CONTINUAR`.
+
+Para apenas preparar a estrutura sem iniciar o Codex, usar:
+
+```bash
+./start.command --prepare
+```
+
 ## Ordem de Carregamento
 
 Toda competência deve carregar o contexto exatamente nesta ordem:
@@ -131,7 +154,6 @@ Toda competência deve carregar o contexto exatamente nesta ordem:
 Armazena exclusivamente:
 
 - ga4_analise.md;
-- google_ads_analise.md;
 - gsc_analise.md;
 - semrush_analise.md.
 
@@ -195,7 +217,7 @@ Markdown, JSON, CSV, prompts, knowledge, history, scripts e templates continuam 
 
 - listar PDFs;
 - identificar fontes;
-- confirmar quatro fontes obrigatórias;
+- confirmar três fontes obrigatórias;
 - interromper se houver inconsistência crítica.
 
 ### 4. Carregamento de contexto
@@ -207,7 +229,7 @@ Markdown, JSON, CSV, prompts, knowledge, history, scripts e templates continuam 
 
 ### 5. Geração das análises
 
-Gerar os quatro arquivos de analysis/.
+Gerar os três arquivos de analysis/.
 
 ### 6. Geração do resumo executivo
 
@@ -238,7 +260,6 @@ Após aprovação:
 
 - PDFs originais preservados;
 - ga4_analise.md;
-- google_ads_analise.md;
 - gsc_analise.md;
 - semrush_analise.md;
 - resumo_executivo.md;
@@ -255,7 +276,6 @@ Após aprovação:
 - correlacionar fontes;
 - posição média menor é melhor;
 - não confundir comparação anual com mensal no SEMrush;
-- considerar demanda e sazonalidade no Google Ads;
 - não tratar queda pontual como problema estrutural;
 - priorizar páginas com muitas impressões e CTR baixo;
 - observar volume absoluto antes de destacar percentuais;
@@ -268,7 +288,7 @@ Após aprovação:
 - tom consultivo e executivo;
 - Markdown simples;
 - sem emojis;
-- sem tabelas;
+- tabelas curtas permitidas no resumo executivo quando melhorarem a leitura;
 - sem travessões;
 - sem referências a PDFs no texto final;
 - sem linguagem de resumo automático;
@@ -321,7 +341,7 @@ git push origin main
 
 ### Pronta para revisão humana
 
-Quatro análises e resumo executivo gerados.
+Três análises e resumo executivo gerados.
 
 ### Operacionalmente concluída
 

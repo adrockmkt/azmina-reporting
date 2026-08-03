@@ -43,7 +43,6 @@ Recomendações editoriais devem preservar clareza sem recorrer a simplificaçõ
 O AzMina Reporting é um projeto permanente de:
 - Digital Analytics;
 - SEO;
-- Google Ads;
 - monitoramento de desempenho;
 - documentação executiva;
 - construção de histórico;
@@ -52,7 +51,6 @@ O projeto não se limita à geração de relatórios mensais.
 Ele constrói memória confiável sobre:
 - evolução de audiência;
 - desempenho orgânico;
-- mídia paga;
 - comportamento dos conteúdos;
 - eficiência de aquisição;
 - engajamento;
@@ -81,17 +79,13 @@ As respostas devem separar fato, hipótese e recomendação.
 As respostas devem respeitar o contexto editorial do AzMina.
 O objetivo é transformar dados em leitura estratégica e decisão prática.
 ## Fontes Obrigatórias
-O projeto possui quatro fontes obrigatórias.
+O projeto possui três fontes obrigatórias.
 Cada fonte possui natureza própria.
 Cada fonte deve gerar análise individual quando a competência for executada.
 ### Google Analytics 4
 Responsável por audiência, aquisição, comportamento, engajamento, páginas, países, cidades, dispositivos e eventos.
 O GA4 ajuda a compreender o que acontece depois que a pessoa chega ao site.
 Ele também ajuda a identificar canais, origem, qualidade de sessão, eventos personalizados e possíveis anomalias de mensuração.
-### Google Ads
-Responsável por exposição paga, cliques, custo, conversões, CPA, CTR, campanhas, grupos, anúncios, palavras-chave, termos de pesquisa, dispositivos, demanda e eficiência.
-Google Ads ajuda a compreender a capacidade de capturar demanda paga e transformar essa exposição em ações relevantes.
-Quando aplicável, a leitura deve considerar o contexto do Google Ad Grants.
 ### Google Search Console
 Responsável por cliques orgânicos, impressões, CTR, posição média, consultas, páginas, países e dispositivos.
 O Google Search Console é a fonte principal para presença orgânica real no Google.
@@ -103,7 +97,6 @@ SEMrush complementa a leitura orgânica, mas não substitui dados reais de cliqu
 ## Entregáveis Mensais
 Os entregáveis operacionais obrigatórios são:
 reports/AAAA-MM/analysis/ga4_analise.md
-reports/AAAA-MM/analysis/google_ads_analise.md
 reports/AAAA-MM/analysis/gsc_analise.md
 reports/AAAA-MM/analysis/semrush_analise.md
 reports/AAAA-MM/output/resumo_executivo.md
@@ -114,7 +107,7 @@ reports/AAAA-MM/output/AzMina_Relatorio_Executivo_AAAA_MM.pdf
 Os arquivos finais são gerados somente após revisão humana no ChatGPT.
 O manifest registra competência, fontes, arquivos, validação, revisão e encerramento.
 ## Papel das Análises Individuais
-As quatro análises individuais preservam detalhamento técnico.
+As três análises individuais preservam detalhamento técnico.
 Elas documentam os fatores que sustentam o resultado.
 Elas permitem auditoria.
 Elas apoiam correções.
@@ -126,7 +119,7 @@ As análises individuais são a base técnica do resumo executivo.
 O resumo executivo não deve nascer diretamente dos PDFs sem mediação analítica.
 ## Papel do Resumo Executivo
 O resumo executivo é o principal entregável analítico.
-Ele deve integrar as quatro fontes.
+Ele deve integrar as três fontes.
 Ele deve apresentar uma narrativa única.
 Ele deve destacar apenas os achados relevantes.
 Ele deve explicar impacto.
@@ -216,33 +209,6 @@ As recomendações devem ser baseadas em evidência.
 As recomendações devem estar alinhadas à responsabilidade editorial.
 SEO deve ampliar alcance qualificado sem comprometer rigor jornalístico.
 Pautas não devem ser criadas apenas por volume de busca.
-## Escopo de Google Ads
-O projeto acompanha:
-- campanhas;
-- grupos de anúncios;
-- anúncios;
-- palavras-chave;
-- termos de pesquisa;
-- dispositivos;
-- conversões;
-- todas as conversões;
-- CPA;
-- CTR;
-- CPC;
-- custo;
-- ROAS;
-- demanda;
-- sazonalidade;
-- concentração de eficiência ou ineficiência.
-A conta pode operar no contexto do Google Ad Grants.
-Quando aplicável, a análise deve considerar:
-- natureza não comercial da mídia;
-- valor de mídia concedido;
-- objetivos institucionais;
-- diferenças entre conversão editorial e receita;
-- regras do programa.
-Queda isolada em Google Ads não deve ser tratada automaticamente como deterioração estrutural.
-Eficiência de mídia deve ser avaliada junto com demanda, histórico e qualidade pós clique.
 ## Escopo de Mensuração
 O projeto também deve considerar:
 - qualidade da coleta;
@@ -382,7 +348,7 @@ Aprendizados candidatos devem amadurecer antes de virar conhecimento permanente.
 - preservar o contexto institucional do AzMina;
 - respeitar temas sensíveis;
 - não sacrificar responsabilidade editorial por tráfego;
-- manter as quatro fontes obrigatórias;
+- manter as três fontes obrigatórias;
 - usar PDFs como entrada, não como patrimônio do repositório;
 - manter análises individuais como base técnica;
 - manter o resumo executivo como entrega analítica principal;

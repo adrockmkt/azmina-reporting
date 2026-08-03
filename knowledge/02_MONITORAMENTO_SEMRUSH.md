@@ -1,12 +1,11 @@
 # 02 MONITORAMENTO SEMRUSH
 ## Objetivo
 Este documento define como o SEMrush é utilizado de forma permanente no AzMina Reporting.
-O SEMrush é uma das quatro fontes obrigatórias do projeto.
+O SEMrush é uma das três fontes obrigatórias do projeto.
 O SEMrush gera análise individual mensal.
 O SEMrush complementa o Google Search Console.
 O SEMrush pode oferecer recortes adicionais por página, país, dispositivo, ranking, backlinks e auditoria.
 O SEMrush não substitui Google Analytics 4.
-O SEMrush não substitui Google Ads.
 O SEMrush não substitui Google Search Console.
 Este arquivo registra regras estruturais, limitações conhecidas e erros recorrentes de interpretação.
 Este arquivo não armazena resultados mensais.

@@ -52,10 +52,11 @@ O Codex deve:
 7. Verificar o status do Git.
 8. Localizar ou criar `reports/${COMPETENCIA}/`, `reports/${COMPETENCIA}/source/`, `reports/${COMPETENCIA}/analysis/` e `reports/${COMPETENCIA}/output/`.
 9. Criar ou validar `reports/${COMPETENCIA}/manifest.json`.
-10. Não gerar análises nesta fase.
-11. Não alterar history/ ou knowledge/.
+10. Verificar se `reports/${COMPETENCIA}/source/` já contém arquivos.
+11. Não gerar análises nesta fase.
+12. Não alterar history/ ou knowledge/.
 
-Ao concluir, interromper e solicitar exatamente:
+Se source/ estiver vazio, interromper e solicitar exatamente:
 
 ```text
 Copie todos os PDFs para:
@@ -69,13 +70,15 @@ Quando terminar, responda apenas:
 CONTINUAR
 ```
 
+Se source/ já contiver arquivos da competência, não solicitar `CONTINUAR`. Seguir diretamente para a Fase 3.
+
 ## Fase 2. Importação dos Relatórios
 
-O usuário deve copiar para source/ todos os PDFs da competência. Preservar nomes originais, não renomear arquivos, não alterar PDFs, não copiar arquivos de outra competência, não mover arquivos históricos e não gerar análises antes de `CONTINUAR`.
+Quando source/ estiver vazio, o usuário deve copiar para source/ todos os PDFs da competência. Preservar nomes originais, não renomear arquivos, não alterar PDFs, não copiar arquivos de outra competência, não mover arquivos históricos e não gerar análises antes de `CONTINUAR`.
 
 ## Fase 3. Validação dos Arquivos
 
-Executar somente após o usuário responder exatamente `CONTINUAR`.
+Executar após o usuário responder exatamente `CONTINUAR` ou quando a competência já iniciar com arquivos em source/.
 
 O Codex deve:
 
@@ -87,7 +90,7 @@ O Codex deve:
 6. Registrar os arquivos no manifest.
 7. Detectar duplicidades.
 8. Detectar arquivos de períodos diferentes.
-9. Confirmar Google Analytics 4, Google Ads, Google Search Console e SEMrush.
+9. Confirmar Google Analytics 4, Google Search Console e SEMrush.
 
 Uma fonte pode estar representada por relatório consolidado com blocos claramente identificáveis, desde que a evidência seja suficiente e o manifest registre essa condição.
 
@@ -115,7 +118,6 @@ Após o carregamento completo, gerar obrigatoriamente:
 
 ```text
 reports/${COMPETENCIA}/analysis/ga4_analise.md
-reports/${COMPETENCIA}/analysis/google_ads_analise.md
 reports/${COMPETENCIA}/analysis/gsc_analise.md
 reports/${COMPETENCIA}/analysis/semrush_analise.md
 ```
@@ -125,7 +127,8 @@ Regras gerais:
 - comparar com o mês imediatamente anterior;
 - aplicar camada mínima de evidência numérica;
 - informar valor atual, anterior, variação absoluta e percentual quando disponíveis;
-- não criar tabelas;
+- evitar tabelas nas análises técnicas;
+- permitir tabelas curtas no resumo executivo quando melhorarem a leitura;
 - não usar emojis ou travessões;
 - não citar nomes dos PDFs nem incluir referências no texto final;
 - separar fato, hipótese e recomendação;
@@ -135,16 +138,6 @@ Regras gerais:
 ### Regras específicas de GA4
 
 A análise deve cobrir, quando disponíveis, usuários ativos, novos usuários, sessões, sessões engajadas, taxa de engajamento, tempo médio de engajamento, visualizações, eventos, eventos principais, canais, origem e mídia, páginas, países, cidades, dispositivos e eventos personalizados.
-
-### Regras específicas de Google Ads
-
-A análise deve cobrir, quando disponíveis, impressões, cliques, CTR, custo, CPC, CPM, conversões, todas as conversões, taxa de conversão, CPA, custo por todas as conversões, ROAS, campanhas, grupos, anúncios, palavras-chave, dispositivos, demanda e sazonalidade.
-
-- queda isolada não representa necessariamente deterioração estrutural;
-- deve ser verificada a procura do período;
-- deve ser considerada a sequência dos meses anteriores;
-- ineficiências concentradas devem ser separadas da leitura geral da conta;
-- mudanças amplas não devem ser recomendadas com base em apenas um mês atípico.
 
 ### Regras específicas de Google Search Console
 
@@ -156,7 +149,7 @@ A análise deve diferenciar gráficos anuais de comparação mensal, usar o bloc
 
 ## Fase 6. Geração do Resumo Executivo
 
-Após concluir as quatro análises, gerar `reports/${COMPETENCIA}/output/resumo_executivo.md`.
+Após concluir as três análises, gerar `reports/${COMPETENCIA}/output/resumo_executivo.md`.
 
 O resumo deve consolidar as fontes sem parecer uma soma de relatórios. Sua estrutura obrigatória é:
 
@@ -172,13 +165,12 @@ O resumo deve explicar o que mudou, apresentar números essenciais, explicar imp
 
 ## Fase 7. Interrupção para Revisão Humana
 
-Após gerar os cinco arquivos Markdown, interromper e solicitar exatamente:
+Após gerar os quatro arquivos Markdown, interromper e solicitar exatamente:
 
 ```text
 Revise os arquivos gerados:
 
 reports/${COMPETENCIA}/analysis/ga4_analise.md
-reports/${COMPETENCIA}/analysis/google_ads_analise.md
 reports/${COMPETENCIA}/analysis/gsc_analise.md
 reports/${COMPETENCIA}/analysis/semrush_analise.md
 reports/${COMPETENCIA}/output/resumo_executivo.md
@@ -211,7 +203,7 @@ Executar somente após o usuário responder exatamente `APROVADO PARA ENCERRAMEN
 
 O Codex deve:
 
-1. Confirmar que os cinco arquivos Markdown existem.
+1. Confirmar que os quatro arquivos Markdown existem.
 2. Confirmar que a aprovação foi explícita.
 3. Atualizar history/evolucao_mensal.md.
 4. Atualizar history/indicadores_historicos.csv.
@@ -236,7 +228,6 @@ Registrar de forma sintética a competência, os principais indicadores aprovado
 Registrar apenas os principais indicadores mensais comparáveis, quando disponíveis.
 
 - GA4: usuários ativos, novos usuários, sessões, sessões engajadas, tempo médio de engajamento, visualizações, eventos principais, Organic Search, Direct e Google CPC.
-- Google Ads: impressões, cliques, CTR, custo, conversões, taxa de conversão, CPA, ROAS, principal campanha positiva e principal campanha negativa.
 - GSC: cliques, impressões, CTR, posição média, principal página e consulta com ganho e com queda.
 - SEMrush: cliques, impressões, CTR, posição média, principal oportunidade de CTR, principal página com ganho e queda e observação metodológica quando aplicável.
 
@@ -272,13 +263,12 @@ Em cada etapa concluída e validada, executar `git diff --check`, revisar `git s
 - sempre aplicar evidência numérica;
 - sempre comparar com o mês anterior;
 - sempre considerar histórico;
-- sempre contextualizar demanda no Google Ads;
 - sempre priorizar impacto estratégico;
 - sempre interromper nos pontos definidos.
 
 ## Critério de Sucesso
 
-A competência está pronta para revisão quando o manifest estiver validado, as quatro fontes confirmadas, as quatro análises e o resumo executivo gerados e os arquivos salvos na competência correta.
+A competência está pronta para revisão quando o manifest estiver validado, as três fontes confirmadas, as três análises e o resumo executivo gerados e os arquivos salvos na competência correta.
 
 Está operacionalmente concluída quando houver aprovação explícita, history atualizado, knowledge aplicável avaliado, changelog atualizado, manifest encerrado e commit e push concluídos.
 
@@ -289,7 +279,6 @@ Está pronta para entrega quando DOCX e PDF finais existirem em output/.
 ```text
 reports/${COMPETENCIA}/source/
 reports/${COMPETENCIA}/analysis/ga4_analise.md
-reports/${COMPETENCIA}/analysis/google_ads_analise.md
 reports/${COMPETENCIA}/analysis/gsc_analise.md
 reports/${COMPETENCIA}/analysis/semrush_analise.md
 reports/${COMPETENCIA}/output/resumo_executivo.md

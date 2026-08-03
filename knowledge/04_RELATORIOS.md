@@ -12,7 +12,6 @@ Relatório sem fonte identificável não deve sustentar conclusão.
 ## Fontes Obrigatórias
 As fontes obrigatórias são:
 - Google Analytics 4;
-- Google Ads;
 - Google Search Console;
 - SEMrush.
 Cada fonte deve gerar análise individual.
@@ -29,7 +28,7 @@ O pipeline deve:
 - registrar no manifest;
 - não duplicar métricas;
 - não considerar a fonte ausente quando o bloco estiver completo.
-Relatório consolidado não elimina a necessidade de quatro análises individuais.
+Relatório consolidado não elimina a necessidade de três análises individuais.
 Cada bloco deve ser associado à fonte correta.
 Quando o bloco estiver incompleto, registrar limitação.
 Quando houver dúvida sobre origem da métrica, interromper ou validar antes da análise.
@@ -58,29 +57,6 @@ GA4 deve ser correlacionado com GSC quando a leitura envolver busca.
 Relatório de GA4 pode conter eventos personalizados do AzMina.
 Eventos devem ser interpretados conforme implementação.
 Tempo e engajamento exigem cautela quando houver indício de anomalia.
-## Relatórios de Google Ads
-Relatórios de Google Ads podem conter:
-- visão geral;
-- campanhas;
-- grupos;
-- anúncios;
-- palavras-chave;
-- termos de pesquisa;
-- dispositivos;
-- conversões;
-- custo;
-- CPA;
-- CTR;
-- CPC;
-- ROAS;
-- comparativos.
-Sua função é sustentar leitura de exposição paga, custo, demanda, eficiência, conversões e qualidade por campanha.
-Relatórios detalhados em CSV podem ser usados em diagnósticos específicos.
-O pipeline mensal principal trabalha com fontes presentes na competência.
-Google Ads deve ser interpretado com histórico, demanda e comportamento pós clique quando possível.
-Relatórios de Google Ads podem conter conversões principais e todas as conversões.
-Essas métricas devem ser diferenciadas antes da recomendação.
-Quando houver Google Ad Grants, o contexto institucional deve ser preservado.
 ## Relatórios de Google Search Console
 Relatórios de GSC podem conter:
 - cliques;
@@ -118,7 +94,6 @@ Quando SEMrush trouxer estimativas, registrar essa natureza.
 ## Relatórios Obrigatórios e Complementares
 Obrigatórios:
 - evidência suficiente de GA4;
-- evidência suficiente de Google Ads;
 - evidência suficiente de GSC;
 - evidência suficiente de SEMrush.
 Complementares:
@@ -254,7 +229,6 @@ O manifest não substitui a leitura crítica do relatório.
 ## Papel das Análises Individuais
 A relação entre fonte e arquivo é:
 - GA4 para ga4_analise.md;
-- Google Ads para google_ads_analise.md;
 - GSC para gsc_analise.md;
 - SEMrush para semrush_analise.md.
 Cada análise individual transforma fonte em interpretação técnica.
@@ -266,14 +240,13 @@ Análise individual deve preservar evidência suficiente para revisão.
 O resumo executivo usa as análises já validadas.
 Ele não substitui o trabalho de leitura das fontes.
 Ele não deve nascer de recortes soltos.
-Ele deve consolidar as quatro fontes em narrativa única.
+Ele deve consolidar as três fontes em narrativa única.
 Ele deve preservar apenas achados relevantes para decisão.
 Resumo executivo não deve citar todos os relatórios recebidos.
 Resumo executivo deve refletir fontes validadas, não arquivos brutos isolados.
 ## Relatórios Fora do Escopo Mensal
 Podem ser aceitos para diagnósticos específicos, mas não devem alterar automaticamente o pipeline.
 Exemplos:
-- diagnóstico completo de Google Ads;
 - termos de pesquisa;
 - auditoria técnica extensa;
 - relatório anual;
@@ -295,7 +268,7 @@ Não atualizar por relatório isolado.
 Não atualizar por arquivo incompleto pontual.
 Não atualizar por diagnóstico específico sem recorrência.
 ## Regras de Ouro
-- confirmar quatro fontes obrigatórias;
+- confirmar três fontes obrigatórias;
 - identificar fonte por conteúdo, não só nome;
 - validar período antes de analisar;
 - registrar relatório consolidado no manifest;
@@ -312,6 +285,6 @@ Não atualizar por diagnóstico específico sem recorrência.
 - registrar limitações;
 - não inventar dados;
 - manter rastreabilidade;
-- gerar quatro análises individuais;
+- gerar três análises individuais;
 - gerar resumo apenas após análises;
 - atualizar este arquivo só por mudança estrutural.

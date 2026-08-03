@@ -88,8 +88,6 @@ Não duplicar conteúdo já governado por prompts.
 ## Correlação entre Fontes
 Correlacionar GA4 com GSC quando a leitura envolver busca orgânica.
 Correlacionar GSC com SEMrush quando a leitura envolver SEO.
-Correlacionar Google Ads com GA4 quando a leitura envolver pós clique.
-Correlacionar Google Ads com demanda e histórico.
 Correlacionar páginas orgânicas com comportamento de consumo.
 Declarar divergências relevantes.
 Não escolher uma fonte arbitrariamente para confirmar narrativa.
@@ -115,7 +113,8 @@ Usar tom consultivo.
 Usar frases diretas.
 Evitar linguagem de resumo automático.
 Evitar excesso de jargão.
-Evitar tabelas.
+Evitar tabelas nas análises técnicas.
+Usar tabelas curtas no resumo executivo quando ajudarem comparação ou priorização.
 Evitar emojis.
 Evitar travessões tipográficos.
 Evitar nomes de PDFs no texto final.
@@ -211,12 +210,6 @@ Evitar versionar PDFs, DOCX ou PDF final.
 Ler audiência com aquisição, comportamento e eventos.
 Validar anomalias antes de concluir.
 Correlacionar Organic Search com GSC.
-Correlacionar Google CPC com Ads.
-### Google Ads
-Ler demanda, exposição, custo e conversão em conjunto.
-Separar campanhas, grupos e termos responsáveis.
-Considerar Google Ad Grants quando aplicável.
-Evitar reestruturação ampla sem recorrência.
 ### GSC
 Ler cliques, impressões, CTR e posição juntos.
 Usar páginas e consultas para explicar o geral.

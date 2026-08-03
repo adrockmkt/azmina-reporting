@@ -8,7 +8,7 @@ Ele não concentra regras detalhadas de análise, estilo, glossário, histórico
 Sua função é garantir que cada camada seja acionada na ordem correta e dentro de sua responsabilidade.
 O Prompt 01 deve impedir execução incompleta, leitura fora da competência, geração parcial indevida e atualização prematura de memória.
 Ele deve preservar a separação entre evidência, análise, entrega, revisão humana e encerramento operacional.
-Ao final da execução conduzida por este prompt, devem existir quatro análises individuais e um resumo executivo em Markdown, prontos para revisão humana.
+Ao final da execução conduzida por este prompt, devem existir três análises individuais e um resumo executivo em Markdown, prontos para revisão humana.
 # PAPEL DO PROMPT 01
 Este documento orquestra.
 Este documento valida.
@@ -19,7 +19,7 @@ Este documento garante consistência.
 Ele deve orientar quando cada documento do framework entra no processo.
 Ele deve garantir que os arquivos sejam criados na competência correta.
 Ele deve garantir que a execução não ignore prompts especializados.
-Ele deve garantir que o resumo executivo nasça das quatro análises individuais.
+Ele deve garantir que o resumo executivo nasça das três análises individuais.
 Ele não ensina análise.
 Ele não define estilo.
 Ele não define conceitos.
@@ -34,7 +34,7 @@ Quando houver dúvida estrutural, consultar prompts/00_MASTER_SPECIFICATION.md.
 # PRINCÍPIO DE ORQUESTRAÇÃO
 Nenhuma etapa analítica pode começar antes que a competência esteja válida.
 Nenhuma etapa analítica pode começar antes que o manifest esteja consistente.
-Nenhuma etapa analítica pode começar antes que as quatro fontes obrigatórias estejam presentes.
+Nenhuma etapa analítica pode começar antes que as três fontes obrigatórias estejam presentes.
 Nenhuma etapa analítica pode começar antes que o contexto tenha sido carregado.
 Nenhuma etapa analítica pode começar antes que os arquivos pertençam ao período correto.
 Cada camada especializada deve ser acionada apenas para sua responsabilidade.
@@ -77,7 +77,7 @@ Antes de gerar qualquer análise, confirmar:
 - períodos coerentes;
 - ausência de mistura de competências;
 - ausência de duplicidade crítica;
-- presença das quatro fontes obrigatórias.
+- presença das três fontes obrigatórias.
 Os diretórios mínimos são:
 - reports/${COMPETENCIA}/source/;
 - reports/${COMPETENCIA}/analysis/;
@@ -125,7 +125,6 @@ Se houver dados de outro mês dentro de source/, interromper.
 # VALIDAÇÃO DAS FONTES
 Confirmar obrigatoriamente:
 - Google Analytics 4;
-- Google Ads;
 - Google Search Console;
 - SEMrush.
 Cada fonte deve estar identificada no manifest.
@@ -168,9 +167,8 @@ O Prompt 01 deve garantir que eles sejam aplicados.
 # GERAÇÃO DAS ANÁLISES INDIVIDUAIS
 Gerar, nesta ordem:
 1. reports/${COMPETENCIA}/analysis/ga4_analise.md
-2. reports/${COMPETENCIA}/analysis/google_ads_analise.md
-3. reports/${COMPETENCIA}/analysis/gsc_analise.md
-4. reports/${COMPETENCIA}/analysis/semrush_analise.md
+2. reports/${COMPETENCIA}/analysis/gsc_analise.md
+3. reports/${COMPETENCIA}/analysis/semrush_analise.md
 Cada análise deve usar os prompts especializados.
 Cada análise deve comparar com o mês anterior.
 Cada análise deve aplicar evidência numérica.
@@ -181,14 +179,14 @@ Cada análise deve consultar histórico e conhecimento quando isso mudar a inter
 Cada análise deve registrar divergências relevantes.
 Cada análise deve preservar a rastreabilidade das fontes.
 Não repetir aqui regras analíticas específicas por fonte.
-Não gerar resumo executivo antes de concluir as quatro análises.
+Não gerar resumo executivo antes de concluir as três análises.
 Não atualizar history/ ou knowledge/ durante esta etapa.
 # GERAÇÃO DO RESUMO EXECUTIVO
-Gerar somente após concluir e validar as quatro análises:
+Gerar somente após concluir e validar as três análises:
 reports/${COMPETENCIA}/output/resumo_executivo.md
 Usar prompts/08_RELATORIO_EXECUTIVO.md como especificação principal de conteúdo.
 Usar os demais prompts como camadas de apoio.
-O resumo deve integrar as quatro fontes.
+O resumo deve integrar as três fontes.
 O resumo deve evitar capítulos isolados por ferramenta.
 O resumo deve apresentar uma única narrativa.
 O resumo deve priorizar impacto e decisão.
@@ -214,22 +212,26 @@ Antes de considerar os arquivos prontos, verificar:
 - ausência de números inventados;
 - ausência de conclusões não sustentadas;
 - ausência de referências a PDFs no texto final;
-- ausência de emojis, tabelas e travessões.
-Também verificar se os cinco arquivos esperados existem.
+- ausência de emojis e travessões.
+- tabelas, quando existirem no resumo executivo, devem ser curtas, legíveis e acompanhadas de interpretação.
+Também verificar se os quatro arquivos esperados existem.
 Também verificar se todos estão dentro de reports/${COMPETENCIA}/.
 Também verificar se nenhum arquivo de history/ ou knowledge/ foi alterado antes da aprovação.
 Se houver inconsistência crítica, corrigir antes da interrupção para revisão humana.
 # INTERRUPÇÕES OBRIGATÓRIAS
-O fluxo possui três interrupções obrigatórias.
+O fluxo possui duas interrupções obrigatórias e uma interrupção condicional.
 ## Interrupção 1
-Após preparar a competência, solicitar os PDFs.
+Após preparar a competência, verificar se source/ contém arquivos.
+Se source/ estiver vazio, solicitar os PDFs.
 Aguardar exatamente:
 CONTINUAR
 Antes de CONTINUAR, não gerar análises.
 Antes de CONTINUAR, não interpretar dados.
 Antes de CONTINUAR, não alterar history/ ou knowledge/.
+Se source/ já contiver arquivos da competência, não solicitar CONTINUAR.
+Nesse caso, seguir diretamente para validação dos arquivos.
 ## Interrupção 2
-Após gerar as quatro análises e o resumo executivo, solicitar revisão humana.
+Após gerar as três análises e o resumo executivo, solicitar revisão humana.
 Aguardar exatamente:
 APROVADO PARA ENCERRAMENTO
 Antes dessa aprovação, não atualizar history/.
@@ -242,7 +244,6 @@ O Codex pode preparar Markdown e encerramento operacional após aprovação, mas
 # SAÍDAS ESPERADAS
 As saídas obrigatórias da etapa analítica são:
 reports/${COMPETENCIA}/analysis/ga4_analise.md
-reports/${COMPETENCIA}/analysis/google_ads_analise.md
 reports/${COMPETENCIA}/analysis/gsc_analise.md
 reports/${COMPETENCIA}/analysis/semrush_analise.md
 reports/${COMPETENCIA}/output/resumo_executivo.md
@@ -278,16 +279,16 @@ Antes da análise:
 - estrutura criada ou validada;
 - manifest criado ou validado;
 - PDFs presentes e legíveis;
-- quatro fontes confirmadas;
+- três fontes confirmadas;
 - contexto carregado na ordem correta.
 Durante a geração:
-- quatro análises individuais geradas;
+- três análises individuais geradas;
 - prompts especializados aplicados;
 - resumo executivo gerado após as análises;
 - consistência verificada;
 - arquivos salvos na competência ativa.
 Antes da revisão humana:
-- cinco arquivos Markdown presentes;
+- quatro arquivos Markdown presentes;
 - divergências relevantes registradas;
 - hipóteses tratadas com cautela;
 - nenhuma atualização prematura de memória;
@@ -299,8 +300,8 @@ Antes da revisão humana:
 - não pular prompts especializados;
 - não misturar competências;
 - não usar histórico como dado atual;
-- não gerar análise parcial sem as quatro fontes;
-- não gerar resumo antes das quatro análises;
+- não gerar análise parcial sem as três fontes;
+- não gerar resumo antes das três análises;
 - não atualizar memória antes da aprovação;
 - não gerar DOCX ou PDF no Codex;
 - manter saídas na competência ativa;

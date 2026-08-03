@@ -29,7 +29,6 @@ A análise deve considerar:
 - busca por orientação;
 - descoberta de conteúdos;
 - recorrência de leitura.
-O público do portal pode chegar por busca, mídia paga, acesso direto, redes, referência ou outros canais.
 Cada canal pode representar intenção diferente.
 Não presumir identidade pessoal a partir de consulta, página ou localização.
 Não tratar interesse em tema sensível como atributo pessoal confirmado.
@@ -59,32 +58,6 @@ Não explorar ansiedade, medo ou vulnerabilidade para aumentar tráfego.
 Consultas de saúde, direitos e violência exigem cuidado adicional com promessa, título e descrição.
 O objetivo deve ser facilitar acesso a informação segura.
 Quando a consulta indicar tema sensível, a recomendação deve equilibrar alcance e responsabilidade.
-## Públicos de Google Ads
-As campanhas podem alcançar públicos interessados em:
-- conteúdos editoriais;
-- campanhas institucionais;
-- feminismo;
-- identidade de gênero;
-- violência contra a mulher;
-- cultura;
-- comportamento;
-- direitos;
-- aplicativos;
-- newsletter;
-- apoio institucional.
-Tráfego pago deve ser avaliado por:
-- aderência temática;
-- comportamento pós clique;
-- eventos;
-- conversões;
-- qualidade da navegação;
-- objetivo da campanha.
-Não definir tráfego qualificado apenas pelo clique.
-Cliques pagos precisam ser relacionados com engajamento, conversão configurada, origem, campanha e intenção.
-Em contexto institucional, conversão pode representar ação editorial, apoio, app, newsletter ou outro objetivo não comercial.
-Campanhas podem ter objetivos diferentes entre si.
-Comparações entre públicos de campanha devem respeitar objetivo, mensagem e etapa de relacionamento.
-Público pago não deve ser avaliado apenas por escala, mas pela coerência entre anúncio, destino e comportamento.
 ## Brasil
 Brasil é o principal mercado recorrente.
 Brasil tende a ter maior peso em tráfego e busca.

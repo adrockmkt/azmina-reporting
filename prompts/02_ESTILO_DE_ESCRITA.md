@@ -4,7 +4,6 @@
 
 ## Objetivo
 
-Este documento define o padrão editorial, o tom, a clareza, a concisão e a forma de apresentação de ga4_analise.md, google_ads_analise.md, gsc_analise.md, semrush_analise.md e resumo_executivo.md.
 
 Ele não substitui a especificação estrutural, as regras de análise, o glossário, as regras de hipóteses e confiança, o estilo consultivo ou o prompt final de geração. Sua função é garantir consistência entre competências e impedir textos com aparência de resumo automático.
 
@@ -60,7 +59,8 @@ Não escrever métricas sem interpretação nem transformar o relatório em desc
 - usar títulos e subtítulos claros;
 - usar listas simples apenas quando melhorarem a leitura;
 - evitar listas extensas;
-- não usar tabelas;
+- evitar tabelas nas análises técnicas;
+- permitir tabelas curtas no resumo executivo quando melhorarem a comparação ou a priorização;
 - não usar emojis;
 - não usar travessões;
 - não usar blocos visuais dependentes do dashboard;
@@ -143,7 +143,6 @@ Não copiar esse texto literalmente como padrão fixo.
 
 Cada ponto forte deve conter o avanço observado, o número que sustenta a leitura, o impacto para o projeto e a relevância estratégica.
 
-Evitar formulações genéricas como "Bom desempenho de tráfego". Preferir: "O crescimento de sessões orgânicas reforçou o SEO como principal canal estrutural de aquisição, mantendo volume sem dependência direta de mídia paga."
 
 Todo ponto forte deve ter impacto real. Não destacar variações pequenas em bases irrelevantes.
 
@@ -179,7 +178,6 @@ Preferir recomendações como:
 
 Exemplo conceitual: O crescimento de usuários não foi acompanhado pelo mesmo ritmo de sessões engajadas, indicando expansão de alcance com menor profundidade média de consumo.
 
-## Regras Específicas para Google Ads
 
 - considerar o histórico dos meses anteriores, procura e sazonalidade;
 - diferenciar queda de demanda de perda de eficiência;
@@ -225,7 +223,6 @@ Exemplo conceitual: As impressões caíram, mas o CTR avançou, indicando menor 
 - variação pontual não deve ser chamada de tendência;
 - crescimento consistente exige mais de um período ou confirmação entre fontes;
 - sazonalidade deve ser tratada como hipótese quando não houver comprovação;
-- no Google Ads, queda após meses de crescimento deve ser contextualizada;
 - no orgânico, redução de cliques com posição estável pode sugerir queda de demanda;
 - datas comemorativas, temas de repercussão, férias e ciclos editoriais podem influenciar procura;
 - indicar quando a leitura precisa ser confirmada no próximo ciclo.
@@ -319,7 +316,6 @@ Diferenciar procura disponível de capacidade da campanha ou página de capturar
 
 ## Personalidade do Documento
 
-O texto deve parecer escrito por consultor sênior de SEO, Digital Analytics, Google Ads, estratégia de conteúdo, mídia digital e mensuração. Deve demonstrar domínio técnico, capacidade de síntese, cautela, senso de prioridade, entendimento do contexto editorial do AzMina e foco em decisão.
 
 Não deve parecer texto gerado automaticamente, transcrição de dashboard, documentação acadêmica ou comentário superficial sobre métricas.
 
@@ -328,7 +324,8 @@ Não deve parecer texto gerado automaticamente, transcrição de dashboard, docu
 Antes de considerar qualquer arquivo finalizado, validar:
 
 - está em português brasileiro;
-- não usa emojis, tabelas ou travessões;
+- não usa emojis ou travessões;
+- usa tabelas apenas quando forem curtas e úteis para leitura executiva;
 - não cita PDFs nem contém referências no texto do cliente;
 - não repete extensivamente o dashboard;
 - toda afirmação relevante tem evidência;
