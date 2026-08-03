@@ -212,16 +212,18 @@ O Codex deve:
 1. Confirmar que os quatro arquivos Markdown existem.
 2. Confirmar que a aprovação foi explícita.
 3. Atualizar history/evolucao_mensal.md.
-4. Atualizar history/indicadores_historicos.csv.
-5. Avaliar se existe informação estrutural nova para knowledge/01 a knowledge/09.
-6. Atualizar somente os arquivos aplicáveis.
-7. Atualizar knowledge/10_LICOES_APRENDIDAS.md apenas com aprendizados reutilizáveis.
-8. Atualizar knowledge/11_CHANGELOG.md.
-9. Atualizar manifest.json.
-10. Marcar a competência como aprovada e encerrada operacionalmente.
-11. Não alterar PDFs.
-12. Não regenerar análises, salvo solicitação explícita.
-13. Não gerar DOCX ou PDF.
+4. Criar ou atualizar history/monthly/AAAA-MM.md a partir de history/monthly/TEMPLATE.md.
+5. Atualizar history/indicadores_historicos.csv.
+6. Avaliar se existe informação estrutural nova para knowledge/01 a knowledge/09.
+7. Atualizar somente os arquivos aplicáveis.
+8. Atualizar knowledge/10_LICOES_APRENDIDAS.md apenas com aprendizados reutilizáveis.
+9. Atualizar knowledge/11_CHANGELOG.md.
+10. Atualizar manifest.json.
+11. Marcar a competência como aprovada e encerrada operacionalmente.
+12. Confirmar que history/monthly/AAAA-MM.md existe antes de concluir.
+13. Não alterar PDFs.
+14. Não regenerar análises, salvo solicitação explícita.
+15. Não gerar DOCX ou PDF.
 
 ## Regras para Atualização de History
 
@@ -236,6 +238,14 @@ Registrar apenas os principais indicadores mensais comparáveis, quando disponí
 - GA4: usuários ativos, novos usuários, sessões, sessões engajadas, tempo médio de engajamento, visualizações, eventos principais, Organic Search, Direct e Google CPC.
 - GSC: cliques, impressões, CTR, posição média, principal página e consulta com ganho e com queda.
 - SEMrush: cliques, impressões, CTR, posição média, principal oportunidade de CTR, principal página com ganho e queda e observação metodológica quando aplicável.
+
+### history/monthly/AAAA-MM.md
+
+Criar um arquivo por competência encerrada a partir de `history/monthly/TEMPLATE.md`.
+
+Registrar competência, arquivos utilizados, resumo factual, hipóteses, recomendações, pendências, aprendizados candidatos, itens promovidos ao knowledge e observações.
+
+Este arquivo complementa `history/evolucao_mensal.md` e `history/indicadores_historicos.csv`.
 
 ## Regras para Atualização de Knowledge
 

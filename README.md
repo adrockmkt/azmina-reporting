@@ -252,6 +252,7 @@ Gerar `reports/AAAA-MM/output/resumo_executivo.md`.
 Após aprovação:
 
 - atualizar history/evolucao_mensal.md;
+- criar ou atualizar history/monthly/AAAA-MM.md;
 - atualizar history/indicadores_historicos.csv;
 - atualizar knowledge aplicável;
 - atualizar knowledge/10_LICOES_APRENDIDAS.md quando necessário;

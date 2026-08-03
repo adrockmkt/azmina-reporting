@@ -222,20 +222,24 @@ O Codex deve:
 1. Confirmar a existência dos quatro arquivos Markdown.
 2. Confirmar a aprovação explícita.
 3. Atualizar history/evolucao_mensal.md.
-4. Atualizar history/indicadores_historicos.csv.
-5. Avaliar se há informação estrutural nova para knowledge/01 a knowledge/09.
-6. Atualizar somente os arquivos aplicáveis.
-7. Atualizar knowledge/10_LICOES_APRENDIDAS.md apenas com aprendizados reutilizáveis.
-8. Atualizar knowledge/11_CHANGELOG.md.
-9. Atualizar manifest.json.
-10. Marcar a competência como aprovada e encerrada operacionalmente.
-11. Não alterar PDFs.
-12. Não regenerar análises, salvo solicitação explícita.
-13. Não gerar DOCX ou PDF.
+4. Criar ou atualizar history/monthly/AAAA-MM.md a partir de history/monthly/TEMPLATE.md.
+5. Atualizar history/indicadores_historicos.csv.
+6. Avaliar se há informação estrutural nova para knowledge/01 a knowledge/09.
+7. Atualizar somente os arquivos aplicáveis.
+8. Atualizar knowledge/10_LICOES_APRENDIDAS.md apenas com aprendizados reutilizáveis.
+9. Atualizar knowledge/11_CHANGELOG.md.
+10. Atualizar manifest.json.
+11. Marcar a competência como aprovada e encerrada operacionalmente.
+12. Confirmar que history/monthly/AAAA-MM.md existe antes de concluir.
+13. Não alterar PDFs.
+14. Não regenerar análises, salvo solicitação explícita.
+15. Não gerar DOCX ou PDF.
 
 ## Regras de Atualização do Histórico
 
 Em history/evolucao_mensal.md, registrar de forma sintética competência, principais números aprovados, evolução, regressão ou estabilidade, principais conclusões, principais recomendações, hipóteses relevantes e pontos que devem ser acompanhados.
+
+Em history/monthly/AAAA-MM.md, registrar a síntese mensal rica da competência encerrada: arquivos utilizados, resumo factual, hipóteses, recomendações, pendências, aprendizados candidatos, itens promovidos ao knowledge e observações.
 
 Em history/indicadores_historicos.csv, registrar somente os principais indicadores comparáveis das três fontes. Não registrar todas as métricas disponíveis.
 

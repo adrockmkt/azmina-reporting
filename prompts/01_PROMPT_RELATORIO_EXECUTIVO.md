@@ -262,6 +262,8 @@ manifest.json deve refletir:
 - conclusão operacional.
 Após a etapa analítica, a conclusão operacional ainda não deve estar marcada como final se não houver aprovação humana.
 Após aprovação explícita, o encerramento pode atualizar history, knowledge aplicável, changelog e manifest conforme os documentos responsáveis.
+O encerramento deve obrigatoriamente criar ou atualizar history/monthly/${COMPETENCIA}.md a partir de history/monthly/TEMPLATE.md.
+Não considerar a competência encerrada se history/monthly/${COMPETENCIA}.md não existir.
 As saídas finais em DOCX e PDF pertencem à finalização editorial no ChatGPT.
 # LIMITES DO PROMPT 01
 O Prompt 01 não deve redefinir arquitetura.
@@ -300,6 +302,12 @@ Antes da revisão humana:
 - hipóteses tratadas com cautela;
 - nenhuma atualização prematura de memória;
 - interrupção para revisão executada.
+Após aprovação humana:
+- history/evolucao_mensal.md atualizado;
+- history/monthly/${COMPETENCIA}.md criado ou atualizado;
+- history/indicadores_historicos.csv atualizado;
+- manifest marcado como revisado e encerrado;
+- knowledge e changelog atualizados somente quando aplicável.
 # REGRAS DE OURO
 - validar antes de gerar;
 - carregar antes de interpretar;
