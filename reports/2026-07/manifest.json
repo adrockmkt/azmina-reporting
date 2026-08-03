@@ -1,0 +1,95 @@
+{
+  "competencia": "2026-07",
+  "status": "validado",
+  "fontes": {
+    "ga4": true,
+    "gsc": true,
+    "semrush": true
+  },
+  "arquivos": [
+    {
+      "nome": "Semrush-Google_Analytics_v4-Report_template-3rd_Aug_2026.pdf",
+      "fonte": "ga4",
+      "tipo": "google_analytics_4",
+      "periodo": "2026-07 comparado com 2026-06",
+      "status": "validado",
+      "observacoes": "Relatorio legivel. Contem sessoes, usuarios, novos usuarios, eventos de conversao, taxa de eventos de conversao, taxa de rejeicao, origem/midia, eventos por midia, dispositivos, idade e cidades."
+    },
+    {
+      "nome": "Semrush-Relatório_Google_Search_Console-Principais_indicadores_com_relação_a_usuários_-3rd_Aug_2026.pdf",
+      "fonte": "gsc_via_semrush",
+      "tipo": "google_search_console_principais_indicadores",
+      "periodo": "2026-07 comparado com 2026-06",
+      "status": "validado",
+      "observacoes": "Relatorio legivel. Contem dados de Google Search Console para 1 a 31 de julho de 2026 comparados com 1 a 30 de junho de 2026, incluindo cliques, impressoes, CTR, posicao media, paises, dispositivos e paginas."
+    },
+    {
+      "nome": "Semrush-Ideias_de_melhoria_em_conteúdos_do_site-azmina_com_br-3rd_Aug_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "on_page_seo_checker",
+      "periodo": "2026-05-05 a 2026-08-02",
+      "status": "validado",
+      "observacoes": "Relatorio legivel. Fonte complementar de SEMrush para ideias de melhoria de conteudo e oportunidades on-page."
+    },
+    {
+      "nome": "Semrush-Relatório_Pesquisa_publicitária-azmina_com_br-3rd_Aug_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "pesquisa_publicitaria_estimativa",
+      "periodo": "2026-07 com contexto de ultimo mes e ultimos 6 meses",
+      "status": "validado_com_limitacao",
+      "observacoes": "Relatorio legivel de Pesquisa Publicitaria do SEMrush. Fonte complementar estimativa, sem uso como fonte obrigatoria separada do pipeline."
+    },
+    {
+      "nome": "Semrush-Relatório_-_Concorrentes-azmina_com_br-3rd_Aug_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "concorrentes_traffic_analytics_paid_search",
+      "periodo": "2026-06 com contexto competitivo e paid search",
+      "status": "validado_com_limitacao",
+      "observacoes": "Relatorio legivel. Contem dados SEMrush de concorrentes, trafego estimado e pesquisa paga estimada. Usado apenas como contexto complementar."
+    },
+    {
+      "nome": "Semrush-Relatório_Monitoramento_de_posição-azmina_com_br-3rd_Aug_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "monitoramento_de_posicao",
+      "periodo": "2026-07",
+      "status": "validado",
+      "observacoes": "Relatorio legivel. Contem palavras-chave monitoradas, posicoes, volume, CPC estimado, URL e recortes desktop e mobile."
+    },
+    {
+      "nome": "Semrush-Relatório_-_Backlinks-azmina_com_br_vs_concorrentes-3rd_Aug_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "backlinks",
+      "periodo": "2026-08-03",
+      "status": "validado_com_limitacao",
+      "observacoes": "Relatorio legivel. Contem backlinks, dominios de referencia, Authority Score, follow/nofollow e comparacao com concorrentes. Ha divergencia de dominio no bloco de backlinks, com uso de azminas.com.br em vez de azmina.com.br, portanto os dados exigem validacao antes de decisoes estruturais."
+    },
+    {
+      "nome": "Semrush-Relatório__Auditoria_do_site-azmina_com_br-3rd_Aug_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "auditoria_do_site",
+      "periodo": "2026-06-23 a 2026-08-03",
+      "status": "validado",
+      "observacoes": "Relatorio legivel. Contem auditoria tecnica do site, historico de auditorias, erros, advertencias, avisos e URLs afetadas."
+    }
+  ],
+  "validacao": {
+    "status": "validada",
+    "fontes_obrigatorias_confirmadas": [
+      "Google Analytics 4",
+      "Google Search Console via SEMrush",
+      "SEMrush"
+    ],
+    "fontes_obrigatorias_ausentes": [],
+    "observacoes": "Competencia validada conforme a arquitetura atual do repositorio, que exige tres fontes obrigatorias. Relatorios de Pesquisa Publicitaria e Concorrentes do SEMrush foram tratados como contexto complementar e estimativo."
+  },
+  "analysis": {
+    "ga4": true,
+    "gsc": true,
+    "semrush": true
+  },
+  "output": {
+    "resumo_executivo": true
+  },
+  "revisao_humana": false,
+  "encerrado": false
+}
