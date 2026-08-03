@@ -78,6 +78,11 @@ Se houver disputa por espaço, manter:
 - o impacto geral no projeto;
 - as recomendações priorizadas.
 Se algum detalhe técnico for importante, ele deve aparecer de forma resumida.
+Tabelas destinadas a DOCX/PDF devem ter no máximo três colunas, salvo tabela de indicadores quando permanecer legível.
+Usar "eventos principais" para métricas principais de GA4.
+Não usar monospace em domínios, valores como not set ou termos que irão para o cliente.
+Não incluir pesquisa paga estimada nas recomendações do resumo executivo.
+Relatórios de pesquisa paga estimada do SEMrush podem aparecer apenas como contexto interno ou limitação metodológica.
 # ESTRUTURA OFICIAL
 O relatório deve possuir exatamente esta sequência.
 1. Resumo Geral
@@ -182,6 +187,11 @@ Cada recomendação deve responder:
 - como validar no próximo ciclo.
 Recomendações não devem ser genéricas.
 Evitar comandos vagos como melhorar SEO, otimizar campanhas, aumentar engajamento ou produzir mais conteúdo.
+Quando houver páginas, URLs, consultas, grupos de páginas, problemas técnicos, eventos ou recortes de dispositivo identificados nas análises, a recomendação deve citar esses alvos concretos.
+O relatório deve preferir instruções operacionais como corrigir a URL específica, revisar a página específica, validar o evento específico ou conferir o filtro específico.
+Se a extração do PDF truncar a URL ou impedir identificação completa, a recomendação deve indicar exatamente onde validar o alvo na ferramenta, por exemplo: abrir Search Console, filtrar mobile, ordenar por impressões e localizar a linha com determinado volume e CTR.
+Não basta dizer revisar páginas de alto volume, corrigir problemas técnicos ou investigar mobile.
+A recomendação deve indicar quais páginas, quais problemas, qual recorte e qual validação esperada, sempre que essa informação existir.
 Cada recomendação deve estar conectada a um diagnóstico, ter escopo claro e poder ser acompanhada no ciclo seguinte.
 Alta prioridade deve ser usada quando houver impacto relevante, risco claro, problema de mensuração crítico, oportunidade evidente ou necessidade de ação rápida.
 Média prioridade deve ser usada quando houver oportunidade ou risco importante, mas a ação puder ser planejada, testada ou validada.
@@ -417,6 +427,9 @@ Antes de considerar o relatório executivo pronto, verificar:
 - o tom é consultivo;
 - o texto é proporcional à evidência;
 - tabelas, quando existirem, são curtas, legíveis e ajudam a comparação ou a priorização;
+- tabelas destinadas a DOCX/PDF têm no máximo três colunas, salvo tabela de indicadores quando permanecer legível;
+- não há monospace em domínios, valores como not set ou termos que irão para o cliente;
+- não há pesquisa paga estimada nas recomendações;
 - não há emojis;
 - não há travessões;
 - não há referências a PDFs;

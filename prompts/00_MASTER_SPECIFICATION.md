@@ -213,7 +213,7 @@ Entrega obrigatória: `reports/AAAA-MM/analysis/semrush_analise.md`.
 
 Toda afirmação de crescimento, queda, melhora, piora, avanço, regressão, estabilidade, ganho ou perda de eficiência deve incluir, quando disponíveis, valor atual, valor anterior, variação absoluta e variação percentual.
 
-Evitar tabelas nas análises técnicas, salvo solicitação explícita. Tabelas curtas são permitidas no resumo executivo quando melhorarem a leitura executiva. Não listar todas as métricas disponíveis. Selecionar apenas os números que sustentam a leitura estratégica.
+Evitar tabelas nas análises técnicas, salvo solicitação explícita. Tabelas curtas são permitidas no resumo executivo quando melhorarem a leitura executiva. Tabelas do resumo executivo destinadas a DOCX/PDF devem ter no máximo três colunas, salvo tabela de indicadores quando permanecer legível. Não listar todas as métricas disponíveis. Selecionar apenas os números que sustentam a leitura estratégica.
 
 ## Correlação obrigatória
 
@@ -264,6 +264,11 @@ Os relatórios devem:
 - evitar repetição do dashboard;
 - não usar emojis ou travessões;
 - usar tabelas apenas quando forem curtas, executivas e úteis para comparação;
+- limitar tabelas destinadas a DOCX/PDF a no máximo três colunas, salvo tabela de indicadores quando permanecer legível;
+- usar "eventos principais" para métricas principais de GA4 no relatório executivo;
+- não usar monospace em domínios, valores como not set ou termos que irão para o cliente;
+- não incluir pesquisa paga estimada nas recomendações do resumo executivo;
+- tratar relatórios de pesquisa paga estimada do SEMrush apenas como contexto interno ou limitação metodológica;
 - não citar nomes de PDFs;
 - não usar referências ou citações no texto entregue ao cliente;
 - não usar linguagem de resumo automático;

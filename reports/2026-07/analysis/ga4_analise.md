@@ -2,50 +2,55 @@
 
 ## Principais Indicadores do Período
 
-Julho de 2026 apresentou crescimento relevante de audiência no GA4. As sessões chegaram a 59,13 mil, avanço de 20,9% sobre junho, o que indica base anterior aproximada de 48,91 mil sessões e ganho de cerca de 10,22 mil sessões. O total de usuários chegou a 51,66 mil, alta de 19,9%, com base anterior aproximada de 43,09 mil e acréscimo de 8,57 mil usuários.
+Julho de 2026 apresentou crescimento relevante de audiência no GA4. As sessões chegaram a 59,13 mil, alta de 20,9% sobre junho, o que indica base anterior aproximada de 48,91 mil sessões e ganho de cerca de 10,22 mil sessões. O total de usuários chegou a 51,66 mil, crescimento de 19,9% sobre aproximadamente 43,09 mil, com acréscimo de cerca de 8,57 mil usuários.
 
-Os novos usuários chegaram a 50,91 mil, crescimento de 22,1% sobre aproximadamente 41,70 mil no mês anterior. O crescimento de novos usuários acima do crescimento de usuários totais sugere expansão de alcance, mas também exige leitura de qualidade, porque renovação de audiência não equivale automaticamente a fidelização.
+Os novos usuários chegaram a 50,91 mil, avanço de 22,1% sobre aproximadamente 41,70 mil no mês anterior. O crescimento de novos usuários acima do crescimento de usuários totais indica expansão de alcance, mas não deve ser interpretado automaticamente como fidelização ou maior qualidade de audiência.
 
-Os eventos de conversão somaram 38,05 mil, alta de 20,8% sobre aproximadamente 31,50 mil em junho, com ganho estimado de 6,55 mil eventos. A taxa de eventos de conversão ficou em 29,8%, avanço de 2,4% sobre cerca de 29,1% no mês anterior. A taxa de rejeição ficou em 44,2%, variação de 3,5% sobre aproximadamente 42,7%, sinalizando que o crescimento de volume veio acompanhado de leve piora na proporção de visitas sem interação qualificada.
+Os eventos principais somaram 38,05 mil, alta de 20,8% sobre aproximadamente 31,50 mil em junho, com ganho estimado de 6,55 mil eventos. A taxa de eventos principais ficou em 29,8%, avanço relativo de 2,4% sobre cerca de 29,1%. A taxa de rejeição chegou a 44,2%, variação de 3,5% sobre aproximadamente 42,7%, sugerindo que o ganho de volume veio acompanhado de leve piora na proporção de sessões sem interação qualificada.
 
 ## Interpretação Geral
 
-O mês combinou ganho de audiência, aumento de novos usuários e crescimento de eventos de conversão. O comportamento é positivo porque o avanço de sessões, usuários e eventos ocorreu na mesma direção, reduzindo a chance de que o crescimento tenha sido apenas volume superficial.
+O mês combinou expansão de audiência, crescimento de novos usuários e aumento de eventos principais. A leitura é positiva porque sessões, usuários e eventos principais avançaram em patamar semelhante, o que reduz o risco de tratar o crescimento como volume totalmente superficial.
 
-Ao mesmo tempo, a taxa de rejeição maior indica que a expansão de alcance não foi totalmente acompanhada por ganho de profundidade. A leitura mais prudente é de crescimento de tráfego com manutenção de conversões, mas com necessidade de observar qualidade de sessão, recirculação e origem das visitas no próximo ciclo.
+Ao mesmo tempo, a taxa de rejeição maior exige cautela. O comportamento mais provável é crescimento de tráfego com manutenção de ações relevantes, mas com oportunidade de melhorar qualidade de sessão, recirculação e aderência das páginas de entrada.
 
-A origem e mídia reforçam a dependência de `google / organic`, `direct / none` e `google / cpc` como origens relevantes. A presença de `google / organic` como destaque é coerente com o crescimento observado no Search Console, que também registrou alta de cliques e impressões no período. Essa convergência aumenta a confiança de que houve avanço orgânico real em julho.
+A origem e mídia reforçam a relevância de google / organic, direct / none, google / cpc, site / membership, youtube.com / referral e m.youtube.com / referral. A presença de google / organic como eixo relevante é coerente com o Search Console, que também registrou alta de cliques e impressões em julho. Essa convergência aumenta a confiança de que houve avanço orgânico real.
 
 ## Aquisição, Eventos e Dispositivos
 
-Os eventos de conversão por mídia ficaram concentrados em organic, com 52,1% do total, seguido por none, com 34%, referral, com 4,9%, cpc, com 4,3%, membership, com 2,8%, e demais mídias, com 1,9%. A concentração em organic reforça o papel da busca como principal motor de ações relevantes no site.
+Os eventos principais por mídia ficaram concentrados em organic, com 52,1% do total, seguido por none, com 34%, referral, com 4,9%, cpc, com 4,3%, membership, com 2,8%, e demais mídias, com 1,9%. Essa distribuição reforça que busca orgânica e acesso direto ou sem origem identificada sustentaram a maior parte das ações relevantes no site.
 
-Por dispositivo, os eventos de conversão se concentraram mais em desktop, com 58,1%, enquanto mobile respondeu por 41,3%, tablet por 0,6% e smart TV por participação residual. Esse recorte merece atenção porque a audiência por dispositivo aponta predominância mobile, mas os eventos de conversão aparecem proporcionalmente mais fortes em desktop. A diferença pode indicar comportamento de navegação distinto, fricção no mobile ou diferença de intenção por dispositivo. Ainda não há evidência suficiente para afirmar causa.
+Por dispositivo, os eventos principais se concentraram em desktop, com 58,1%, enquanto mobile respondeu por 41,3%, tablet por 0,6% e smart TV por participação residual. Esse recorte contrasta com a audiência por dispositivo: mobile representou 68,6% dos usuários, desktop 31,1%, tablet 0,4% e smart TV participação residual.
 
-Na audiência por dispositivo, mobile representou 68,6% dos usuários, desktop 31,1%, tablet 0,4% e smart TV participação residual. O relatório também registrou 81,9% de idade como unknown, o que limita interpretações demográficas e impede conclusões sobre perfil etário da audiência.
+A diferença entre usuários mobile e eventos principais mobile é um ponto técnico e de experiência importante. Ela pode indicar comportamento de navegação distinto, fricção no mobile, diferença de intenção por página de entrada ou configuração desigual de eventos. A evidência atual não permite afirmar a causa.
+
+O relatório também registrou 81,9% de idade como unknown. Esse volume limita interpretações demográficas e impede conclusões sólidas sobre perfil etário da audiência.
 
 ## Geografia e Possíveis Anomalias
 
-São Paulo, Rio de Janeiro, Salvador, Belo Horizonte, Brasília, Fortaleza, Curitiba e Porto Alegre aparecem entre as cidades relevantes, o que é coerente com a distribuição esperada para um portal brasileiro. Porém, há sinais que exigem cautela: `not set` aparece com cerca de 10 mil usuários e 10,33 mil sessões, e cidades como Singapore, Council Bluffs, Santiago, Mexico City e Kingston aparecem com variações percentuais muito elevadas.
+São Paulo, Rio de Janeiro, Salvador, Belo Horizonte, Brasília, Fortaleza, Curitiba, Porto Alegre e outras capitais brasileiras aparecem entre as cidades relevantes, o que é coerente com a distribuição esperada para um portal brasileiro.
 
-Esses sinais não confirmam tráfego automatizado, mas reduzem a confiança para leituras de expansão internacional ou mudança de público. A recomendação é tratar essas localidades como ponto de validação técnica, cruzando origem, dispositivo, página e engajamento antes de qualquer conclusão editorial ou geográfica.
+Há, porém, sinais que exigem validação antes de qualquer leitura de público. O recorte not set aparece com cerca de 10 mil usuários e 10,33 mil sessões. Também aparecem cidades internacionais ou atípicas com variações percentuais muito elevadas, como Singapore, Council Bluffs, Santiago, Mexico City e Kingston.
+
+Esses dados não comprovam tráfego automatizado nem erro de mensuração por si só. Eles indicam que a leitura geográfica deve ser tratada com baixa confiança até cruzar cidade, origem, mídia, dispositivo, landing page, taxa de rejeição e eventos principais.
 
 ## Pontos Fortes
 
-- A audiência cresceu em escala relevante: sessões subiram de aproximadamente 48,91 mil para 59,13 mil, alta de 20,9% e ganho de cerca de 10,22 mil sessões.
-- A expansão trouxe novos usuários: o indicador passou de cerca de 41,70 mil para 50,91 mil, alta de 22,1%, reforçando ganho de alcance.
-- Os eventos de conversão acompanharam o crescimento de tráfego: subiram de aproximadamente 31,50 mil para 38,05 mil, alta de 20,8%, mantendo coerência entre aquisição e ações registradas.
-- A participação de organic nos eventos de conversão, com 52,1%, reforça a relevância do SEO para gerar ações dentro do site.
+- As sessões subiram de aproximadamente 48,91 mil para 59,13 mil, alta de 20,9% e ganho de cerca de 10,22 mil visitas.
+- Os usuários cresceram de cerca de 43,09 mil para 51,66 mil, avanço de 19,9%, reforçando expansão de alcance.
+- Os novos usuários chegaram a 50,91 mil, crescimento de 22,1%, acima da variação de usuários totais.
+- Os eventos principais acompanharam o crescimento de tráfego, passando de aproximadamente 31,50 mil para 38,05 mil, alta de 20,8%.
+- Organic concentrou 52,1% dos eventos principais por mídia, sinal consistente com o avanço orgânico observado no Search Console.
 
 ## Pontos de Atenção
 
 - A taxa de rejeição chegou a 44,2%, variação de 3,5% sobre junho. O dado sugere que parte do crescimento pode ter vindo com menor profundidade relativa de navegação.
-- Mobile concentrou 68,6% dos usuários, mas apenas 41,3% dos eventos de conversão. A divergência merece investigação porque pode indicar diferença de comportamento, fricção de experiência ou composição distinta do tráfego.
-- O volume de `not set` e cidades atípicas impede leitura geográfica conclusiva. A hipótese de tráfego operacional, limitação de identificação ou automação deve ser validada antes de usar esses dados como evidência de público.
+- Mobile concentrou 68,6% dos usuários, mas apenas 41,3% dos eventos principais. Essa divergência precisa ser investigada antes de concluir que o problema é comportamento, experiência ou mensuração.
+- O volume de not set e cidades atípicas reduz a confiança para leituras geográficas. Esses recortes devem ser validados antes de qualquer decisão sobre público internacional.
 
 ## Recomendações Práticas
 
-- Validar a qualidade do crescimento orgânico cruzando páginas de entrada, eventos de conversão e taxa de rejeição, priorizando os conteúdos que ganharam sessões e mantiveram ações relevantes.
-- Investigar a diferença entre usuários mobile e eventos de conversão mobile, com foco em páginas de maior entrada orgânica, carregamento, experiência de navegação e eventos configurados.
-- Auditar localidades com comportamento atípico, principalmente `not set`, Singapore, Council Bluffs, Santiago, Mexico City e Kingston, cruzando origem, mídia, dispositivo e página para separar público real de possível ruído de mensuração.
-- Acompanhar no próximo ciclo se o crescimento de sessões se mantém sem nova elevação da taxa de rejeição. Se a rejeição continuar subindo, priorizar recirculação interna e revisão de páginas de entrada com grande volume.
+- No GA4, abrir Landing page, aplicar o filtro session source / medium igual a google / organic e comparar mobile contra desktop nas 10 principais páginas de entrada. Para cada página, revisar sessões, taxa de rejeição, eventos principais e eventos por sessão.
+- Investigar a diferença entre mobile com 68,6% dos usuários e mobile com 41,3% dos eventos principais. Validar carregamento, posição de módulos de recirculação, funcionamento dos eventos principais e diferenças entre páginas de entrada mobile e desktop.
+- Auditar especificamente not set, Singapore, Council Bluffs, Santiago, Mexico City e Kingston. Cruzar cidade, origem, mídia, dispositivo, landing page, engajamento e eventos principais antes de usar esses dados como evidência de público.
+- Acompanhar em agosto se as sessões continuam crescendo sem nova alta da taxa de rejeição. Se a rejeição subir novamente, priorizar recirculação nas principais landing pages orgânicas mobile.

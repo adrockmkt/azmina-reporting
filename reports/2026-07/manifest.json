@@ -1,6 +1,6 @@
 {
   "competencia": "2026-07",
-  "status": "validado",
+  "status": "encerrado",
   "fontes": {
     "ga4": true,
     "gsc": true,
@@ -13,7 +13,7 @@
       "tipo": "google_analytics_4",
       "periodo": "2026-07 comparado com 2026-06",
       "status": "validado",
-      "observacoes": "Relatorio legivel. Contem sessoes, usuarios, novos usuarios, eventos de conversao, taxa de eventos de conversao, taxa de rejeicao, origem/midia, eventos por midia, dispositivos, idade e cidades."
+      "observacoes": "Relatorio legivel. Contem sessoes, usuarios, novos usuarios, eventos principais, taxa de eventos principais, taxa de rejeicao, origem/midia, eventos por midia, dispositivos, idade e cidades."
     },
     {
       "nome": "Semrush-Relatório_Google_Search_Console-Principais_indicadores_com_relação_a_usuários_-3rd_Aug_2026.pdf",
@@ -80,7 +80,7 @@
       "SEMrush"
     ],
     "fontes_obrigatorias_ausentes": [],
-    "observacoes": "Competencia validada conforme a arquitetura atual do repositorio, que exige tres fontes obrigatorias. Relatorios de Pesquisa Publicitaria e Concorrentes do SEMrush foram tratados como contexto complementar e estimativo."
+    "observacoes": "Competencia validada conforme a arquitetura atual do repositorio, que exige tres fontes obrigatorias. Relatorios de Pesquisa Publicitaria e Concorrentes do SEMrush foram tratados como contexto complementar e estimativo. Analises regeneradas e aprovadas em 2026-08-03 conforme regras atualizadas de recomendacoes praticas."
   },
   "analysis": {
     "ga4": true,
@@ -90,6 +90,11 @@
   "output": {
     "resumo_executivo": true
   },
-  "revisao_humana": false,
-  "encerrado": false
+  "revisao_humana": true,
+  "encerrado": true,
+  "encerramento": {
+    "status": "aprovado_para_encerramento",
+    "aprovacao": "APROVADO PARA ENCERRAMENTO",
+    "observacoes": "Analises e resumo executivo regenerados foram aprovados para encerramento. History, indicadores historicos, changelog e manifest atualizados apos aprovacao humana explicita. DOCX e PDF nao foram gerados no Codex."
+  }
 }

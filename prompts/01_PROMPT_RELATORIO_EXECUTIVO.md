@@ -207,6 +207,8 @@ Antes de considerar os arquivos prontos, verificar:
 - divergências registradas;
 - hipóteses proporcionais à evidência;
 - recomendações proporcionais à confiança;
+- recomendações com alvo concreto quando houver páginas, URLs, consultas, eventos, dispositivos, problemas técnicos ou filtros identificáveis;
+- ausência de recomendações vagas como revisar SEO, corrigir problemas técnicos, investigar mobile ou otimizar páginas sem indicar onde agir;
 - consistência entre análises e resumo;
 - consistência terminológica;
 - ausência de números inventados;
@@ -214,6 +216,11 @@ Antes de considerar os arquivos prontos, verificar:
 - ausência de referências a PDFs no texto final;
 - ausência de emojis e travessões.
 - tabelas, quando existirem no resumo executivo, devem ser curtas, legíveis e acompanhadas de interpretação.
+- tabelas do resumo executivo destinadas a DOCX/PDF devem ter no máximo três colunas, salvo tabela de indicadores quando permanecer legível.
+- o resumo executivo deve usar "eventos principais" para métricas principais de GA4.
+- o resumo executivo não deve usar monospace em domínios, valores como not set ou termos que irão para o cliente.
+- o resumo executivo não deve incluir pesquisa paga estimada nas recomendações.
+- relatórios de pesquisa paga estimada do SEMrush podem ser tratados apenas como contexto interno ou limitação metodológica.
 Também verificar se os quatro arquivos esperados existem.
 Também verificar se todos estão dentro de reports/${COMPETENCIA}/.
 Também verificar se nenhum arquivo de history/ ou knowledge/ foi alterado antes da aprovação.

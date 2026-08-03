@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 
-RUN_CODEX=0
+RUN_CODEX=1
 COMPETENCIA=""
 
 find_codex_cli() {
@@ -43,10 +43,13 @@ if [[ -z "$COMPETENCIA" ]]; then
   echo "Pastas de competencia detectadas:"
 
   found_competencias=0
+  DEFAULT_COMPETENCIA=""
   for dir in reports/[0-9][0-9][0-9][0-9]-[0-9][0-9]; do
     if [[ -d "$dir" ]]; then
       found_competencias=1
-      echo "- ${dir#reports/}"
+      detected_competencia="${dir#reports/}"
+      DEFAULT_COMPETENCIA="$detected_competencia"
+      echo "- ${detected_competencia}"
     fi
   done
 
@@ -58,8 +61,21 @@ if [[ -z "$COMPETENCIA" ]]; then
   echo "Se voce ja criou a pasta e colocou os PDFs em reports/AAAA-MM/source/, informe essa competencia."
   echo "Se ainda nao criou, informe a competencia desejada e o comando criara a estrutura."
   echo
-  printf "Qual competencia mensal devo processar? Use o formato AAAA-MM: "
-  read -r COMPETENCIA
+  if [[ -n "$DEFAULT_COMPETENCIA" ]]; then
+    printf "Qual competencia mensal devo processar? Use o formato AAAA-MM [%s]: " "$DEFAULT_COMPETENCIA"
+  else
+    printf "Qual competencia mensal devo processar? Use o formato AAAA-MM: "
+  fi
+
+  if ! read -r COMPETENCIA; then
+    COMPETENCIA=""
+    echo
+  fi
+
+  if [[ -z "$COMPETENCIA" && -n "$DEFAULT_COMPETENCIA" ]]; then
+    COMPETENCIA="$DEFAULT_COMPETENCIA"
+    echo "Usando competencia detectada: ${COMPETENCIA}"
+  fi
 fi
 
 if [[ ! "$COMPETENCIA" =~ ^[0-9]{4}-[0-9]{2}$ ]]; then
@@ -135,17 +151,34 @@ COMPETENCIA=${COMPETENCIA}
 Os arquivos ja estao em reports/${COMPETENCIA}/source/.
 Siga README.md, START_HERE.md, COMANDO.md e prompts/01_PROMPT_RELATORIO_EXECUTIVO.md.
 Como source/ ja contem arquivos, nao solicite CONTINUAR. Siga diretamente para validacao dos arquivos e analise.
+Regenere as analises e o resumo executivo aplicando as regras atualizadas.
+As recomendacoes devem ser praticas, com paginas, URLs, filtros, problemas tecnicos, eventos ou recortes especificos sempre que existirem.
+Nao gerar recomendacoes genericas.
 Nao faca commit nem push sem aprovacao explicita."
 
 echo "Proximo passo no Codex:"
 echo
 echo "$PROMPT"
 echo
-echo "Para tentar abrir o Codex CLI automaticamente, rode:"
-echo
-echo "./start.command --run ${COMPETENCIA}"
 
 if [[ "$RUN_CODEX" -eq 0 ]]; then
+  echo "Modo preparacao concluido. A analise automatica nao foi iniciada."
+  exit 0
+fi
+
+echo "O comando tentara iniciar o Codex CLI automaticamente agora."
+echo "Para apenas preparar a competencia sem executar a analise, use:"
+echo
+echo "./start.command --prepare ${COMPETENCIA}"
+
+if [[ "${CODEX_SHELL:-}" == "1" || "${CODEX_CI:-}" == "1" ]]; then
+  echo
+  echo "Execucao automatica bloqueada: este comando esta rodando dentro de uma sessao Codex."
+  echo "Abrir outro Codex a partir daqui pode causar erro no banco local."
+  echo
+  echo "Para rodar tudo automaticamente, execute ./start.command no Terminal do macOS ou no terminal do VS Code."
+  echo
+  echo "Se quiser executar nesta sessao, use o texto acima como instrucao para o Codex atual."
   exit 0
 fi
 

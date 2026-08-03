@@ -115,6 +115,11 @@ Evitar linguagem de resumo automático.
 Evitar excesso de jargão.
 Evitar tabelas nas análises técnicas.
 Usar tabelas curtas no resumo executivo quando ajudarem comparação ou priorização.
+Limitar tabelas do resumo executivo destinadas a DOCX/PDF a no máximo três colunas, salvo tabela de indicadores quando permanecer legível.
+Usar "eventos principais" para métricas principais de GA4 no relatório executivo.
+Não usar monospace em domínios, valores como not set ou termos que irão para o cliente.
+Não incluir pesquisa paga estimada nas recomendações do resumo executivo.
+Tratar relatórios de pesquisa paga estimada do SEMrush apenas como contexto interno ou limitação metodológica.
 Evitar emojis.
 Evitar travessões tipográficos.
 Evitar nomes de PDFs no texto final.

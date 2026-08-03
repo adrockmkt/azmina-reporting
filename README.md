@@ -98,9 +98,9 @@ Exemplo: `reports/2026-06/`.
 
 Cada competência é autocontida. Não misturar arquivos de meses diferentes nem criar análises fora da competência ativa.
 
-## Atalho de Preparação
+## Atalho de Execução
 
-Para preparar uma competência pelo terminal, usar:
+Para preparar e executar uma competência pelo terminal, usar:
 
 ```bash
 ./start.command
@@ -118,15 +118,15 @@ O atalho valida a competência, cria as pastas necessárias, valida a proteção
 
 Se `source/` ainda estiver vazio, o atalho instrui o usuário a copiar os PDFs e rodar `./start.command` novamente.
 
-Se `source/` já tiver arquivos, o atalho exibe o texto exato para continuar a validação e análise no Codex, sem exigir `CONTINUAR`.
+Se `source/` já tiver arquivos, o atalho tenta iniciar o Codex CLI automaticamente para validar os arquivos, regenerar as análises e gerar o resumo executivo, sem exigir `CONTINUAR`.
 
-Para tentar iniciar o Codex CLI automaticamente pelo terminal, usar:
+Para apenas preparar a competência sem iniciar a análise, usar:
 
 ```bash
-./start.command --run AAAA-MM
+./start.command --prepare AAAA-MM
 ```
 
-Esse modo depende do estado local do Codex CLI no computador. Se houver erro de banco local, permissões ou sessão, usar o texto exibido pelo `./start.command` dentro do Codex.
+A execução automática depende do estado local do Codex CLI no computador. Se houver erro de banco local, permissões ou sessão, usar o texto exibido pelo `./start.command` dentro do Codex.
 
 ## Ordem de Carregamento
 
@@ -290,9 +290,13 @@ Após aprovação:
 - tom consultivo e executivo;
 - Markdown simples;
 - sem emojis;
+- usar "eventos principais" para métricas principais de GA4 nos textos destinados ao cliente;
+- não usar monospace em domínios, valores como not set ou termos que irão para o cliente;
 - tabelas curtas permitidas no resumo executivo quando melhorarem a leitura;
+- tabelas destinadas a DOCX/PDF devem ter no máximo três colunas, salvo tabela de indicadores quando permanecer legível;
 - sem travessões;
 - sem referências a PDFs no texto final;
+- relatórios de pesquisa paga estimada do SEMrush podem aparecer apenas como contexto interno ou limitação metodológica, nunca como recomendação ao cliente;
 - sem linguagem de resumo automático;
 - sem causalidade não comprovada;
 - recomendações práticas e priorizadas;

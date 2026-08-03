@@ -287,6 +287,12 @@ Um ponto de atenção deve representar risco ou limitação real, ter evidência
 ## Critérios para Recomendações
 
 Toda recomendação deve ser específica, executável, conectada ao diagnóstico, proporcional à evidência, compatível com o contexto editorial, priorizada e acompanhável no próximo ciclo.
+Quando a evidência trouxer páginas, URLs, consultas, eventos, fontes de tráfego, dispositivos, países, problemas técnicos ou grupos de páginas, a recomendação deve citar esses alvos concretos.
+Não basta recomendar revisar snippets, corrigir SEO técnico, melhorar interlinkagem, investigar mobile ou validar mensuração.
+A recomendação deve indicar onde agir, por exemplo URL, página de origem, link quebrado, problema de sitemap, filtro no Search Console, evento no GA4 ou recorte do SEMrush.
+Se a URL estiver truncada no PDF ou não puder ser identificada com segurança, registrar o caminho operacional de validação na ferramenta: qual relatório abrir, qual filtro aplicar, qual métrica ordenar e qual linha localizar.
+Não inventar página, consulta ou URL para parecer específico.
+Quando houver limitação de extração, explicitar a limitação e transformar a ação em conferência direcionada.
 
 ## Regras de Ouro
 

@@ -233,6 +233,45 @@ Tipo:
 knowledge e governança.
 Revisão:
 revisar após a primeira competência real concluída.
+### Encerramento operacional da competencia 2026-07
+Resumo:
+A competencia 2026-07 foi aprovada para encerramento operacional e teve seus resultados consolidados em history e manifest.
+Arquivos alterados:
+history/evolucao_mensal.md, history/indicadores_historicos.csv, reports/2026-07/manifest.json e knowledge/11_CHANGELOG.md.
+Motivação:
+Registrar os resultados aprovados da competencia e marcar o ciclo como encerrado apos aprovacao humana explicita.
+Impacto:
+O historico passa a conter a primeira competencia consolidada para comparacoes futuras.
+Tipo:
+historico e encerramento operacional.
+Revisão:
+revisar quando a proxima competencia for encerrada ou quando houver correcao aprovada nos resultados.
+### Ajustes permanentes do resumo executivo
+Resumo:
+Foram padronizadas regras editoriais para o resumo executivo.
+Arquivos alterados:
+README.md, START_HERE.md, COMANDO.md, prompts/00_MASTER_SPECIFICATION.md, prompts/01_PROMPT_RELATORIO_EXECUTIVO.md, prompts/02_ESTILO_DE_ESCRITA.md, prompts/08_RELATORIO_EXECUTIVO.md e knowledge/09_BOAS_PRATICAS.md.
+Motivação:
+Evitar recorrencia de problemas finais de revisao editorial em competencias futuras.
+Impacto:
+O framework passa a orientar o uso de eventos principais, a ausencia de monospace em termos destinados ao cliente, o limite de colunas em tabelas para DOCX/PDF e o tratamento de pesquisa paga estimada apenas como contexto interno ou limitacao metodologica.
+Tipo:
+prompt, documentacao e knowledge.
+Revisão:
+revisar se o formato final de DOCX/PDF ou o escopo de fontes obrigatorias mudar.
+### Reencerramento da competencia 2026-07 apos regeneracao analitica
+Resumo:
+A competencia 2026-07 foi regenerada com as regras atualizadas de recomendacoes praticas e aprovada novamente para encerramento operacional.
+Arquivos alterados:
+reports/2026-07/analysis/ga4_analise.md, reports/2026-07/analysis/gsc_analise.md, reports/2026-07/analysis/semrush_analise.md, reports/2026-07/output/resumo_executivo.md, reports/2026-07/manifest.json, history/evolucao_mensal.md, history/indicadores_historicos.csv e knowledge/11_CHANGELOG.md.
+Motivação:
+Consolidar a versao aprovada apos aplicacao das regras que exigem recomendacoes com paginas, URLs, filtros, problemas tecnicos, eventos ou recortes especificos quando existirem.
+Impacto:
+O historico da competencia passa a refletir recomendacoes mais acionaveis, sem promover novo conhecimento permanente para knowledge.
+Tipo:
+historico e encerramento operacional.
+Revisão:
+revisar se houver nova correcao aprovada nos resultados de julho de 2026.
 ## Atualização deste Arquivo
 Atualizar quando houver mudança estrutural.
 Atualizar quando houver alteração permanente em knowledge.

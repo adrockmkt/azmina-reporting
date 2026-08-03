@@ -61,8 +61,11 @@ Não escrever métricas sem interpretação nem transformar o relatório em desc
 - evitar listas extensas;
 - evitar tabelas nas análises técnicas;
 - permitir tabelas curtas no resumo executivo quando melhorarem a comparação ou a priorização;
+- limitar tabelas do resumo executivo destinadas a DOCX/PDF a no máximo três colunas, salvo tabela de indicadores quando permanecer legível;
 - não usar emojis;
 - não usar travessões;
+- usar "eventos principais" para métricas principais de GA4 no relatório executivo;
+- não usar monospace em domínios, valores como not set ou termos que irão para o cliente;
 - não usar blocos visuais dependentes do dashboard;
 - não citar nomes de PDFs;
 - não incluir referências ou citações no texto entregue ao cliente;
@@ -326,6 +329,9 @@ Antes de considerar qualquer arquivo finalizado, validar:
 - está em português brasileiro;
 - não usa emojis ou travessões;
 - usa tabelas apenas quando forem curtas e úteis para leitura executiva;
+- usa no máximo três colunas em tabelas destinadas a DOCX/PDF, salvo tabela de indicadores quando permanecer legível;
+- usa "eventos principais" para métricas principais de GA4 no relatório executivo;
+- não usa monospace em domínios, valores como not set ou termos que irão para o cliente;
 - não cita PDFs nem contém referências no texto do cliente;
 - não repete extensivamente o dashboard;
 - toda afirmação relevante tem evidência;

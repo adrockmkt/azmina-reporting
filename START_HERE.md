@@ -129,6 +129,10 @@ Regras gerais:
 - informar valor atual, anterior, variação absoluta e percentual quando disponíveis;
 - evitar tabelas nas análises técnicas;
 - permitir tabelas curtas no resumo executivo quando melhorarem a leitura;
+- limitar tabelas do resumo executivo destinadas a DOCX/PDF a no máximo três colunas, salvo tabela de indicadores quando permanecer legível;
+- usar "eventos principais" para métricas principais de GA4 no relatório executivo;
+- não usar monospace em domínios, valores como not set ou termos que irão para o cliente;
+- não transformar pesquisa paga estimada do SEMrush em recomendação ao cliente;
 - não usar emojis ou travessões;
 - não citar nomes dos PDFs nem incluir referências no texto final;
 - separar fato, hipótese e recomendação;
@@ -162,6 +166,8 @@ O resumo deve consolidar as fontes sem parecer uma soma de relatórios. Sua estr
 As recomendações devem ser separadas em Alta prioridade, Média prioridade e Baixa prioridade. O resumo deve ser compatível com até duas páginas em DOCX/PDF.
 
 O resumo deve explicar o que mudou, apresentar números essenciais, explicar impacto, considerar histórico, diferenciar volume de eficiência, registrar divergências entre fontes, contextualizar demanda e sazonalidade quando aplicável e evitar repetição operacional.
+
+No resumo executivo, relatórios de pesquisa paga estimada do SEMrush podem ser citados apenas como contexto interno ou limitação metodológica. Como mídia paga saiu do escopo, esses relatórios não devem gerar recomendações ao cliente.
 
 ## Fase 7. Interrupção para Revisão Humana
 

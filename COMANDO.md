@@ -25,7 +25,7 @@ Depois que o usuário informar uma competência válida, definir internamente `C
 
 Toda execução deve seguir obrigatoriamente `START_HERE.md`.
 
-Para preparar a estrutura da competência pelo terminal, pode ser usado:
+Para preparar e executar a competência pelo terminal, pode ser usado:
 
 ```bash
 ./start.command
@@ -39,15 +39,15 @@ Também é possível informar a competência diretamente:
 ./start.command 2026-07
 ```
 
-Esse atalho prepara pastas, valida proteção local de source/, cria manifest.json quando necessário e, se source/ já tiver arquivos, exibe o texto exato para continuar a validação e análise no Codex.
+Esse atalho prepara pastas, valida proteção local de source/, cria manifest.json quando necessário e, se source/ já tiver arquivos, tenta iniciar o Codex CLI automaticamente para validar os arquivos, regenerar as análises e gerar o resumo executivo.
 
-Para tentar iniciar o Codex CLI automaticamente pelo terminal, usar:
+Para apenas preparar a competência sem iniciar a análise, usar:
 
 ```bash
-./start.command --run AAAA-MM
+./start.command --prepare AAAA-MM
 ```
 
-Esse modo depende do estado local do Codex CLI no computador. Se houver erro de banco local, permissões ou sessão, usar o texto exibido pelo `./start.command` dentro do Codex.
+A execução automática depende do estado local do Codex CLI no computador. Se houver erro de banco local, permissões ou sessão, usar o texto exibido pelo `./start.command` dentro do Codex.
 
 Antes de qualquer análise, o Codex deve ler:
 
@@ -149,6 +149,10 @@ reports/${COMPETENCIA}/output/resumo_executivo.md
 - incluir valor atual, valor anterior, variação absoluta e variação percentual quando disponíveis;
 - evitar tabelas nas análises técnicas;
 - permitir tabelas curtas no resumo executivo quando melhorarem a leitura;
+- limitar tabelas do resumo executivo destinadas a DOCX/PDF a no máximo três colunas, salvo tabela de indicadores quando permanecer legível;
+- usar "eventos principais" para métricas principais de GA4 no relatório executivo;
+- não usar monospace em domínios, valores como not set ou termos que irão para o cliente;
+- não transformar pesquisa paga estimada do SEMrush em recomendação ao cliente;
 - não usar emojis ou travessões;
 - não citar nomes dos PDFs ou incluir referências no texto final;
 - não repetir extensivamente o dashboard;
@@ -187,6 +191,8 @@ O arquivo resumo_executivo.md deve conter:
 5. Recomendações Priorizadas
 
 As recomendações devem ser separadas em Alta prioridade, Média prioridade e Baixa prioridade. O resumo deve ser compatível com até duas páginas após conversão para DOCX ou PDF.
+
+Relatórios de pesquisa paga estimada do SEMrush podem ser citados apenas como contexto interno ou limitação metodológica. Como mídia paga saiu do escopo, não incluir pesquisa paga estimada nas recomendações do resumo executivo.
 
 ## Interrupção para Revisão Humana
 
