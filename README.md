@@ -118,13 +118,15 @@ O atalho valida a competência, cria as pastas necessárias, valida a proteção
 
 Se `source/` ainda estiver vazio, o atalho instrui o usuário a copiar os PDFs e rodar `./start.command` novamente.
 
-Se `source/` já tiver arquivos, o atalho inicia o Codex automaticamente para validação e análise da competência, sem exigir `CONTINUAR`.
+Se `source/` já tiver arquivos, o atalho exibe o texto exato para continuar a validação e análise no Codex, sem exigir `CONTINUAR`.
 
-Para apenas preparar a estrutura sem iniciar o Codex, usar:
+Para tentar iniciar o Codex CLI automaticamente pelo terminal, usar:
 
 ```bash
-./start.command --prepare
+./start.command --run AAAA-MM
 ```
+
+Esse modo depende do estado local do Codex CLI no computador. Se houver erro de banco local, permissões ou sessão, usar o texto exibido pelo `./start.command` dentro do Codex.
 
 ## Ordem de Carregamento
 

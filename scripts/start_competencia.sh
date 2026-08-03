@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 
-RUN_CODEX=1
+RUN_CODEX=0
 COMPETENCIA=""
 
 find_codex_cli() {
@@ -26,6 +26,9 @@ for arg in "$@"; do
   case "$arg" in
     --prepare)
       RUN_CODEX=0
+      ;;
+    --run)
+      RUN_CODEX=1
       ;;
     *)
       COMPETENCIA="$arg"
@@ -134,10 +137,15 @@ Siga README.md, START_HERE.md, COMANDO.md e prompts/01_PROMPT_RELATORIO_EXECUTIV
 Como source/ ja contem arquivos, nao solicite CONTINUAR. Siga diretamente para validacao dos arquivos e analise.
 Nao faca commit nem push sem aprovacao explicita."
 
+echo "Proximo passo no Codex:"
+echo
+echo "$PROMPT"
+echo
+echo "Para tentar abrir o Codex CLI automaticamente, rode:"
+echo
+echo "./start.command --run ${COMPETENCIA}"
+
 if [[ "$RUN_CODEX" -eq 0 ]]; then
-  echo "Proximo passo no Codex:"
-  echo
-  echo "$PROMPT"
   exit 0
 fi
 

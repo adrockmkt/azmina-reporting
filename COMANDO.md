@@ -39,13 +39,15 @@ Também é possível informar a competência diretamente:
 ./start.command 2026-07
 ```
 
-Esse atalho prepara pastas, valida proteção local de source/, cria manifest.json quando necessário e, se source/ já tiver arquivos, inicia o Codex automaticamente para validação e análise.
+Esse atalho prepara pastas, valida proteção local de source/, cria manifest.json quando necessário e, se source/ já tiver arquivos, exibe o texto exato para continuar a validação e análise no Codex.
 
-Para apenas preparar a estrutura sem iniciar o Codex, usar:
+Para tentar iniciar o Codex CLI automaticamente pelo terminal, usar:
 
 ```bash
-./start.command --prepare
+./start.command --run AAAA-MM
 ```
+
+Esse modo depende do estado local do Codex CLI no computador. Se houver erro de banco local, permissões ou sessão, usar o texto exibido pelo `./start.command` dentro do Codex.
 
 Antes de qualquer análise, o Codex deve ler:
 
