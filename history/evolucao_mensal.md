@@ -134,3 +134,36 @@ Um registro nao deve ser mantido apenas por ter sido registrado no passado.
 
 - Foram promovidas regras de apresentacao do resumo executivo para evitar recorrencia de problemas editoriais: uso de eventos principais, ausencia de monospace em termos destinados ao cliente, limite de colunas em tabelas e exclusao de pesquisa paga estimada das recomendacoes ao cliente.
 - Apos regeneracao aprovada, nao houve novo aprendizado permanente promovido para knowledge. A mudanca ficou restrita ao detalhamento aprovado de history e manifest.
+
+### 2026-08
+
+#### Fatos
+
+- Agosto de 2026 apresentou forte expansao de audiencia, com 91,3 mil sessoes e 87,15 mil usuarios no GA4.
+- O Search Console registrou 29,3 mil cliques organicos, 1,62 milhao de impressoes, CTR media de 1,8% e posicao media de 6,6.
+- A posicao media melhorou em relacao a julho, mas a CTR caiu de 1,9% para 1,8%, indicando ganho de alcance com perda relativa de captura de clique.
+- A taxa de rejeicao no GA4 subiu de 44,2% para 62,7%, principal alerta de qualidade de sessao da competencia.
+- Mobile concentrou 86,5% dos cliques organicos no Search Console e 80,8% dos usuarios no GA4.
+- O SEMrush registrou 6.566 posicoes organicas no recorte desktop, 397 posicoes no recorte mobile, 180 ideias on-page pendentes, Site Health 78, 42 erros, 13.122 advertencias e 6.572 avisos.
+- A auditoria tecnica identificou 19 URLs incorretas no sitemap, 11 problemas de conteudo misto, 4 imagens internas quebradas, 3 paginas 4XX, 3 links internos quebrados, 2 links com formato incorreto e 1 pagina bloqueada.
+- O bloco de backlinks manteve ressalva metodologica porque parte dos dados apareceu associada a azminas.com.br ou a dados antigos.
+
+#### Hipoteses
+
+- O crescimento forte do GA4 nao deve ser atribuido apenas ao Google Search, porque o Search Console cresceu em ritmo menor que sessoes e usuarios.
+- A queda de CTR, mesmo com melhora de posicao media, sugere aumento de exposicao em consultas ou paginas com menor aderencia de snippet.
+- A alta da taxa de rejeicao pode estar concentrada em landing pages mobile ou em canais especificos, mas precisa ser validada no GA4.
+- A pagina associada a pansexual parece manter alto volume de impressoes com baixa captura de clique, exigindo analise de consultas antes de qualquer ajuste editorial.
+
+#### Recomendacoes
+
+- Corrigir ou redirecionar as paginas 4XX sobre visibilidade trans, cancer de mama e pessoa trans na pandemia.
+- Revisar a pagina Pessoas trans tambem podem ter cancer de mama, pois os tres links internos quebrados partem dela e apontam para as URLs 4XX.
+- Priorizar no Search Console a revisao das URLs https://azmina.com.br/reportagens/qual-a-diferenca-entre-ser-bi-ou-pansexual/ e https://azmina.com.br/reportagens/como-e-feito-um-aborto-seguro/, validando consultas antes de alterar snippets.
+- Investigar no GA4 a alta da rejeicao, com foco nas principais landing pages organicas mobile e nas URLs ja priorizadas pelo Search Console.
+- Corrigir o sitemap, conteudo misto em https://azmina.com.br/reportagens/maternidade-lesbica/, imagens internas quebradas e links com formato incorreto.
+- Validar o projeto de backlinks no SEMrush antes de usar dados de autoridade ou comparacao competitiva.
+
+#### Aprendizados Promovidos
+
+- Nenhum novo aprendizado permanente foi promovido para knowledge nesta competencia. A regra de recomendacoes com URL, pagina, filtro ou alvo operacional ja estava coberta pelo framework e foi aplicada na revisao dos arquivos de agosto.

@@ -272,6 +272,19 @@ Tipo:
 historico e encerramento operacional.
 Revisão:
 revisar se houver nova correcao aprovada nos resultados de julho de 2026.
+### Encerramento operacional da competencia 2026-08
+Resumo:
+A competencia 2026-08 foi aprovada para encerramento operacional e teve seus resultados consolidados em history e manifest.
+Arquivos alterados:
+reports/2026-08/analysis/ga4_analise.md, reports/2026-08/analysis/gsc_analise.md, reports/2026-08/analysis/semrush_analise.md, reports/2026-08/output/resumo_executivo.md, reports/2026-08/manifest.json, history/evolucao_mensal.md, history/indicadores_historicos.csv, history/monthly/2026-08.md e knowledge/11_CHANGELOG.md.
+Motivação:
+Registrar os resultados aprovados da competencia e marcar o ciclo como encerrado apos aprovacao humana explicita.
+Impacto:
+O historico passa a conter agosto de 2026 como segunda competencia consolidada, com destaque para crescimento de audiencia, queda relativa de eficiencia, recomendacoes com URLs acionaveis e ressalvas metodologicas sobre eventos principais e backlinks.
+Tipo:
+historico e encerramento operacional.
+Revisão:
+revisar quando a proxima competencia for encerrada ou quando houver correcao aprovada nos resultados de agosto de 2026.
 ## Atualização deste Arquivo
 Atualizar quando houver mudança estrutural.
 Atualizar quando houver alteração permanente em knowledge.

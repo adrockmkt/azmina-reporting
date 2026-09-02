@@ -1,0 +1,77 @@
+{
+  "competencia": "2026-08",
+  "status": "encerrado_operacionalmente",
+  "fontes": {
+    "ga4": true,
+    "gsc": true,
+    "semrush": true
+  },
+  "arquivos": [
+    {
+      "nome": "Semrush-Google_Analytics_v4-Report_template-2nd_Sep_2026.pdf",
+      "fonte": "ga4",
+      "tipo": "Google Analytics 4 exportado via SEMrush",
+      "periodo": "1 a 31 de agosto de 2026 comparado com 1 a 31 de julho de 2026",
+      "status": "validado",
+      "observacoes": "Relatorio legivel. Eventos aparecem como eventos de conversao no PDF e foram tratados no texto como eventos principais, com ressalva sobre divergencia em relacao ao historico aprovado de julho."
+    },
+    {
+      "nome": "Semrush-Relatório_Google_Search_Console-Principais_indicadores_com_relação_a_usuários_-2nd_Sep_2026.pdf",
+      "fonte": "gsc",
+      "tipo": "Google Search Console exportado via SEMrush",
+      "periodo": "1 a 31 de agosto de 2026 comparado com 1 a 31 de julho de 2026",
+      "status": "validado",
+      "observacoes": "Relatorio legivel. URLs de algumas paginas aparecem truncadas e devem ser confirmadas diretamente no Search Console antes de ajustes editoriais."
+    },
+    {
+      "nome": "Semrush-Relatório_Monitoramento_de_posição-azmina_com_br-2nd_Sep_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Monitoramento de posicao organica",
+      "periodo": "agosto de 2026",
+      "status": "validado",
+      "observacoes": "Relatorio legivel. Recortes desktop e mobile tratados separadamente."
+    },
+    {
+      "nome": "Semrush-Ideias_de_melhoria_em_conteúdos_do_site-azmina_com_br-2nd_Sep_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Ideias de melhoria on-page",
+      "periodo": "4 de junho a 1 de setembro de 2026",
+      "status": "validado",
+      "observacoes": "Relatorio legivel. Ideias pendentes tratadas como fila de triagem, nao como checklist automatico."
+    },
+    {
+      "nome": "Semrush-Relatório__Auditoria_do_site-azmina_com_br-2nd_Sep_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Auditoria tecnica do site",
+      "periodo": "ultima atualizacao em 31 de agosto de 2026",
+      "status": "validado",
+      "observacoes": "Relatorio legivel. Itens criticos acionaveis incluem sitemap, conteudo misto, imagens quebradas, erros 4XX, links internos quebrados e links com formato incorreto."
+    },
+    {
+      "nome": "Semrush-Relatório_-_Backlinks-azmina_com_br_vs_concorrentes-2nd_Sep_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Backlinks e comparacao competitiva",
+      "periodo": "gerado em 2 de setembro de 2026",
+      "status": "validado_com_ressalva",
+      "observacoes": "Relatorio contem blocos associados a azminas.com.br e bloco de auditoria com ultima atualizacao em setembro de 2025. Dados de autoridade devem ser validados antes de decisao."
+    },
+    {
+      "nome": "Semrush-Relatório_Pesquisa_publicitária-azmina_com_br-2nd_Sep_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Pesquisa publicitaria estimada",
+      "periodo": "agosto de 2026",
+      "status": "validado_com_ressalva",
+      "observacoes": "Relatorio estimativo usado apenas como contexto metodologico. Mídia paga permanece fora das recomendacoes ao cliente."
+    }
+  ],
+  "analysis": {
+    "ga4": true,
+    "gsc": true,
+    "semrush": true
+  },
+  "output": {
+    "resumo_executivo": true
+  },
+  "revisao_humana": true,
+  "encerrado": true
+}
