@@ -167,3 +167,28 @@ Um registro nao deve ser mantido apenas por ter sido registrado no passado.
 #### Aprendizados Promovidos
 
 - Nenhum novo aprendizado permanente foi promovido para knowledge nesta competencia. A regra de recomendacoes com URL, pagina, filtro ou alvo operacional ja estava coberta pelo framework e foi aplicada na revisao dos arquivos de agosto.
+
+### 2026-09
+
+#### Fatos
+
+- O GA4 registrou 85,53 mil sessoes e 82,03 mil usuarios, quedas de 6,3% e 5,9% em relacao a agosto. Eventos principais subiram para 39,07 mil, alta de 11,7%, e a taxa de rejeicao caiu de 62,7% para 59,2%, com definicao dos eventos ainda pendente de validacao.
+- O Search Console registrou 28,3 mil cliques, ante 29,3 mil em agosto. Como setembro teve um dia a menos, os cliques por dia ficaram praticamente estaveis. Impressoes cairam de 1,62 milhao para 1,41 milhao, queda de 13%; a CTR subiu de 1,8% para 2% e a posicao media piorou de 6,6 para 7,26.
+- A auditoria do SEMrush apontou Site Health 70, ante 78 no historico aprovado de agosto, alem de 20 entradas incorretas no sitemap, 15 ocorrencias de conteudo misto, seis imagens quebradas, um recurso 4XX e um link interno quebrado.
+- Dados de monitoramento de posicao e backlinks nao foram incluidos como serie historica comparavel devido a diferencas de atualizacao, dominio ou escopo.
+
+#### Hipoteses
+
+- A perda de impressoes pode resultar de mudanca na demanda, na posicao ou na composicao das consultas. O material recebido nao permite separar esses fatores.
+- O crescimento de eventos principais com menos sessoes pode estar concentrado em paginas ou canais especificos e requer validacao da instrumentacao.
+
+#### Recomendacoes
+
+- Priorizar no Search Console a analise de paginas e consultas com maior perda absoluta de impressoes, e verificar a linha mobile terminada em ra-mulher/, que ganhou alcance mas perdeu CTR.
+- Validar a definicao dos eventos principais no GA4 e cruzar landing pages, origem/midia, dispositivo, rejeicao e eventos.
+- Corrigir o recurso de cartilha 4XX e seu link, definir a versao canonica de Marias em fuga, revisar sitemap e imagens e confirmar as correcoes em nova auditoria.
+- Atualizar o projeto de backlinks para azmina.com.br antes de usar indicadores de autoridade.
+
+#### Aprendizados Promovidos
+
+- Nenhum novo aprendizado permanente foi promovido para knowledge nesta competencia. A comparacao por media diaria em meses de duracao diferente foi registrada como aprendizado candidato em history/monthly/2026-09.md.

@@ -1,0 +1,111 @@
+{
+  "competencia": "2026-09",
+  "status": "encerrado_operacionalmente",
+  "fontes": {
+    "ga4": true,
+    "gsc": true,
+    "semrush": true
+  },
+  "arquivos": [
+    {
+      "nome": "Semrush-Backlink_Audit__Visão_geral-Nome_do_projeto__azmina_com_br-2nd_Oct_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Auditoria de backlinks",
+      "periodo": "ultima atualizacao em 4 de setembro de 2025",
+      "status": "validado_com_ressalva",
+      "observacoes": "Dados antigos, apenas contexto; nao usar para evolucao mensal."
+    },
+    {
+      "nome": "Semrush-Google_Analytics_v4-Report_template-2nd_Oct_2026.pdf",
+      "fonte": "ga4",
+      "tipo": "Google Analytics 4 exportado via SEMrush",
+      "periodo": "1 a 30 de setembro de 2026 comparado com 1 a 31 de agosto de 2026",
+      "status": "validado",
+      "observacoes": "Resumo mensal legivel."
+    },
+    {
+      "nome": "Semrush-Ideias_de_melhoria_em_conteúdos_do_site-azmina_com_br-2nd_Oct_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Ideias de melhoria on-page",
+      "periodo": "4 de julho a 1 de outubro de 2026",
+      "status": "validado_com_ressalva",
+      "observacoes": "Janela multimensal; usar apenas o estoque atual de ideias, sem inferir variacao mensal do grafico."
+    },
+    {
+      "nome": "Semrush-Relatório_-_Backlinks-azmina_com_br_vs_concorrentes-2nd_Oct_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Backlinks e comparacao competitiva",
+      "periodo": "gerado em 2 de outubro de 2026",
+      "status": "validado_com_ressalva",
+      "observacoes": "Bloco principal associado a azminas.com.br; bloco de auditoria associado a azmina.com.br esta desatualizado."
+    },
+    {
+      "nome": "Semrush-Relatório_-_Concorrentes-azmina_com_br-2nd_Oct_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Concorrentes e trafego estimado",
+      "periodo": "1 de outubro de 2025 a 30 de setembro de 2026 e ultimo mes estimado",
+      "status": "validado_com_ressalva",
+      "observacoes": "Graficos anuais e estimativas servem apenas como contexto; nao substituem dados mensais das fontes integradas."
+    },
+    {
+      "nome": "Semrush-Relatório_Google_Search_Console-Principais_indicadores_com_relação_a_usuários_-2nd_Oct_2026.pdf",
+      "fonte": "gsc",
+      "tipo": "Google Search Console exportado via SEMrush",
+      "periodo": "1 a 30 de setembro de 2026 comparado com 1 a 31 de agosto de 2026",
+      "status": "validado_com_ressalva",
+      "observacoes": "Resumo mensal legivel; URLs nas tabelas de paginas aparecem truncadas e requerem confirmacao no Search Console."
+    },
+    {
+      "nome": "Semrush-Relatório_Monitoramento_de_posição-azmina_com_br-2nd_Oct_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Monitoramento de posicoes organicas",
+      "periodo": "snapshot exportado em 2 de outubro de 2026, com atualizacoes de palavras-chave em agosto e setembro",
+      "status": "validado_com_ressalva",
+      "observacoes": "Universo de palavras-chave monitoradas pode variar; nao equiparar diretamente a cliques reais ou inferir tendencia mensal apenas do total."
+    },
+    {
+      "nome": "Semrush-Relatório_Pesquisa_publicitária-azmina_com_br-2nd_Oct_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Pesquisa publicitaria estimada",
+      "periodo": "snapshot exportado em 2 de outubro de 2026",
+      "status": "validado_com_ressalva",
+      "observacoes": "Estimativa interna, fora das recomendacoes ao cliente."
+    },
+    {
+      "nome": "Semrush-Relatório__Auditoria_do_site-azmina_com_br-2nd_Oct_2026.pdf",
+      "fonte": "semrush",
+      "tipo": "Auditoria tecnica do site",
+      "periodo": "ultima atualizacao em 28 de setembro de 2026",
+      "status": "validado",
+      "observacoes": "Rastreamento de 1.000 paginas; usar como fotografia tecnica da competencia."
+    }
+  ],
+  "analysis": {
+    "ga4": true,
+    "gsc": true,
+    "semrush": true
+  },
+  "output": {
+    "resumo_executivo": true,
+    "docx_final_local": true,
+    "pdf_final_local": true
+  },
+  "revisao_humana": true,
+  "encerrado": true,
+  "validacao": {
+    "status": "validada_com_ressalvas",
+    "fontes_obrigatorias_confirmadas": [
+      "Google Analytics 4",
+      "Google Search Console",
+      "SEMrush"
+    ],
+    "fontes_obrigatorias_ausentes": [],
+    "duplicidades_criticas": [],
+    "observacoes": "Nove PDFs legiveis e distintos. GA4 e GSC comparam setembro com agosto de 2026. Relatorios complementares com janelas anuais, dados estimados, dominio divergente ou auditoria de backlinks antiga nao serao tratados como comparativo mensal."
+  },
+  "encerramento": {
+    "status": "aprovado_para_encerramento",
+    "aprovacao_recebida": "AROVADO",
+    "observacoes": "Resposta do usuario interpretada como aprovacao da competencia 2026-09 na sequencia do pedido de revisao humana. Analises e resumo executivo mantidos; history e changelog atualizados. DOCX e PDF finais locais nao foram gerados nem editados pelo Codex; PDF conferido quanto a abertura e limite de duas paginas."
+  }
+}

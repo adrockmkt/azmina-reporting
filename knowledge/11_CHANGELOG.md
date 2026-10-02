@@ -285,6 +285,21 @@ Tipo:
 historico e encerramento operacional.
 Revisão:
 revisar quando a proxima competencia for encerrada ou quando houver correcao aprovada nos resultados de agosto de 2026.
+### Encerramento operacional da competencia 2026-09
+Resumo:
+A competencia 2026-09 recebeu aprovacao humana e foi consolidada no historico e no manifest.
+Arquivos alterados nesta etapa:
+history/evolucao_mensal.md, history/indicadores_historicos.csv, history/monthly/2026-09.md, reports/2026-09/manifest.json e knowledge/11_CHANGELOG.md.
+Arquivos mantidos:
+As tres analises e o resumo executivo aprovados nao foram regenerados. Prompts e knowledge/01 a knowledge/10 permaneceram sem alteracao, pois nao houve mudanca estrutural aprovada.
+Motivação:
+Registrar o fechamento operacional apos revisao humana e preservar ressalvas de comparabilidade para competencias futuras.
+Impacto:
+O historico passa a conter a terceira competencia aprovada; nenhum resultado mensal foi promovido a regra permanente.
+Tipo:
+historico e encerramento operacional.
+Revisão:
+revisar se houver correcao aprovada nos resultados de setembro de 2026.
 ## Atualização deste Arquivo
 Atualizar quando houver mudança estrutural.
 Atualizar quando houver alteração permanente em knowledge.
